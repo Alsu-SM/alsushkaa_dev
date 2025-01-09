@@ -40,4 +40,5 @@ export enum ELEMENT_IDS {
 	IntroFooter = 'intro_footer',
 	IntroHand = 'intro_hand',
 	SectionAbout = 'about',
+	SectionEducation = 'education',
 }

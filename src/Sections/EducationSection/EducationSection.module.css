@@ -1,0 +1,151 @@
+.root {
+	position: relative;
+	height: 100dvh;
+	padding-top: var(--navbar-height);
+	width: 100vw;
+	display: flex;
+	overflow: hidden;
+	box-sizing: border-box;
+	gap: 20px;
+}
+
+.section_title {
+	color: var(--color-gray);
+	padding: 10px;
+	font-size: 150px;
+	font-weight: 1000;
+	text-transform: uppercase;
+	position: absolute;
+	top: var(--navbar-height);
+	right: 0;
+	line-height: 0.8;
+	white-space: nowrap;
+	text-align-last: right;
+	z-index: 2;
+}
+.section_title::before {
+	content: '';
+	background: var(--color-black-bg);
+	width: calc(33vw + 10px);
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 120px;
+	z-index: -1;
+}
+.content {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1;
+	z-index: 2;
+}
+
+.column {
+	flex: 1;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.column_2 {
+	height: calc(100% - 120px);
+	margin-top: auto;
+}
+
+.column_3 {
+	height: calc(100% - 120px);
+	margin-top: auto;
+}
+.content .column:not(:last-child) {
+	border-right: 3px solid var(--color-white-dark);
+}
+
+.column .image {
+	transition: all 0.3s;
+}
+
+.column_1 .image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.2;
+	bottom: -100px;
+}
+
+.column_2 .image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.2;
+	bottom: -100px;
+}
+
+.column_3 .image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.2;
+	bottom: -100px;
+}
+
+.column:hover .image {
+	bottom: -20px;
+	opacity: 0.3;
+}
+
+.item {
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	z-index: 3;
+	text-shadow:
+		-1px -1px 0 var(--color-black-bg),
+		1px -1px 0 var(--color-black-bg),
+		-1px 1px 0 var(--color-black-bg),
+		1px 1px 0 var(--color-black-bg);
+}
+
+.item_date {
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--color-red);
+}
+
+.item_title {
+	font-size: 30px;
+}
+
+.item_description {
+	font-size: 18px;
+	color: var(--color-white-secondary);
+}
+
+.item_skills {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	color: var(--color-white-secondary);
+}
+
+.item_skills_title {
+	white-space: nowrap;
+}
+
+.item_skills_description {
+	text-align: right;
+}
+
+.column_1 .item {
+	margin-top: 100px;
+}
+.column_2 .item {
+	margin-top: 60px;
+}

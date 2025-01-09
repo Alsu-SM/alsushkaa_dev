@@ -5,7 +5,12 @@ import clsx from 'clsx';
 import getTranslation from '../../Shared/getTranslation';
 import { TRANSLATION_KEYS } from '../../Shared/constants';
 
-export function getNavItem({ item, isActive, language }: GetNavItemParams) {
+export function getNavItem({
+	item,
+	isActive,
+	language,
+	onClick,
+}: GetNavItemParams) {
 	const path = `#${item}`;
 	const title = getTranslation(`link-${item}` as TRANSLATION_KEYS, language);
 
@@ -17,6 +22,7 @@ export function getNavItem({ item, isActive, language }: GetNavItemParams) {
 			className={clsx(styles.link, {
 				[styles.link_active]: isActive,
 			})}
+			onClick={onClick}
 		>
 			{title}
 		</NavLink>

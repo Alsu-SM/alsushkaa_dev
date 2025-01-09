@@ -3,9 +3,10 @@ export function isScrolledIntoView(elementId: string) {
 	if (section) {
 		const docViewTop = window.visualViewport?.pageTop || 0;
 		const docViewBottom = docViewTop + (window.visualViewport?.height || 0);
-		const elemTop = section?.offsetTop;
+		const elemTop = section.offsetTop;
 		const elemBottom = elemTop + section.offsetHeight;
-		return elemBottom <= docViewBottom && elemTop >= docViewTop;
+
+		return elemBottom <= docViewBottom && elemTop + 100 >= docViewTop;
 	}
 	return false;
 }

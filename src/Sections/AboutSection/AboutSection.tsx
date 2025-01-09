@@ -39,18 +39,6 @@ function AboutSection({ className, style }: AboutSectionProps) {
 							TRANSLATION_KEYS.AboutDescriptionItem_4,
 						]}
 					/>
-					{/* <div className={styles.description_item}>
-						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_1, language)}
-					</div>
-					<div className={styles.description_item}>
-						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_2, language)}
-					</div>
-					<div className={styles.description_item}>
-						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_3, language)}
-					</div>
-					<div className={styles.description_item}>
-						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_4, language)}
-					</div> */}
 				</div>
 				<div className={styles.standard}>
 					<AccentText

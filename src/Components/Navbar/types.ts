@@ -24,4 +24,5 @@ export type GetNavItemParams = {
 	item: string;
 	isActive: boolean;
 	language: Language;
+	onClick: () => void;
 };
