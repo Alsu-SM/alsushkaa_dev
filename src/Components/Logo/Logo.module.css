@@ -1,0 +1,9 @@
+.logo {
+	transform: translateY(0px);
+	animation: var(--float-animation);
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+}

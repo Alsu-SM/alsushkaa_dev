@@ -1,0 +1,61 @@
+.nav {
+	width: 100%;
+	height: var(--navbar-height);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	background: var(--color-black-bg);
+	z-index: 3;
+}
+
+.link {
+	text-decoration: none;
+	color: var(--color-white-secondary);
+	font-size: 20px;
+	position: relative;
+}
+
+.link::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 4px;
+	bottom: -4px;
+	left: 0;
+	background-color: var(--color-accent);
+	opacity: 0.6;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.link:hover::after,
+.link_active::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.logo {
+	font-family: 'Protest Riot', sans-serif;
+	font-family: 'Protest Guerrilla', sans-serif;
+	font-size: 40px;
+	color: var(--color-accent);
+	padding: 0;
+	margin: 0;
+}
+
+.logo .icon {
+	width: 60px;
+	height: auto;
+}
+
+.group_right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

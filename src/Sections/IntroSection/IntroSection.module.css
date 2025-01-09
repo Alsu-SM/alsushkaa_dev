@@ -1,0 +1,50 @@
+.root {
+	position: relative;
+	height: var(--section-height);
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex: 1;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.motivation_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.motivation {
+	color: var(--color-white-secondary);
+	font-size: 40px;
+}
+
+.motivation_wrapper .contact_button {
+	font-size: 20px;
+	padding: 8px 20px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex: 1;
+	padding-left: 100px;
+	position: relative;
+}
+
+.hand {
+	position: absolute;
+	right: 120px;
+	bottom: -20px;
+}

@@ -1,0 +1,132 @@
+.root {
+	position: relative;
+	font-size: 34px;
+	color: var(--color-white-secondary);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+	box-sizing: border-box;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-around;
+
+	/* background: #1d1d1d; */
+	/* box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); */
+}
+
+.content_row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 80px;
+}
+
+.counter {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.counter .counter_image {
+	opacity: 0.4;
+	transform: translateY(0px);
+	animation: var(--float-animation);
+}
+.content {
+	width: 70%;
+	text-align: right;
+}
+
+.buttons_row {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.point_button,
+.arrow_button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.point_button_image {
+	width: 30px;
+	height: auto;
+	opacity: 0.4;
+	transition: all 0.3s;
+}
+
+.arrow_button_image {
+	width: 45px;
+	height: auto;
+	opacity: 0.7;
+	transition: all 0.3s;
+}
+
+.point_button__active .point_button_image {
+	opacity: 0.7;
+}
+
+.point_button:hover .point_button_image {
+	transform: translateY(-6px);
+}
+
+.arrow_button__left .arrow_button_image {
+	transform: rotate(180deg);
+}
+
+.arrow_button__right:hover .arrow_button_image {
+	transform: translateY(-6px);
+}
+
+.arrow_button__left:hover .arrow_button_image {
+	transform: rotate(180deg) translateY(6px);
+}
+/* 
+.root:before,
+.root:after {
+	content: '';
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	background: linear-gradient(
+		45deg,
+		#2600fb,
+		#00c3ff,
+		#006eff,
+		#3700ff,
+		#0084ff,
+		#1900fb,
+		#006eff,
+		#00c3ff,
+		#00d9ff,
+		#0099ff
+	);
+	background-size: 400%;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	z-index: -1;
+	animation: steam 120s linear infinite;
+	opacity: 0.3;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.root:after {
+	filter: blur(50px);
+} */

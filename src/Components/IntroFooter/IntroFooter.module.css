@@ -1,0 +1,37 @@
+.footer {
+	height: 120px;
+	align-items: center;
+	width: 100vw;
+	left: 0;
+	padding: 20px 100px;
+	box-sizing: border-box;
+	border-top: 5px solid var(--color-accent-dark);
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
+	opacity: 0.8;
+}
+
+.footer_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.footer_column__left {
+	text-align: right;
+	align-items: flex-end;
+}
+
+.footer_item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.icon {
+	width: 30px;
+	height: auto;
+	opacity: 0.5;
+}

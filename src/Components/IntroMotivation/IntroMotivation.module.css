@@ -1,0 +1,22 @@
+.motivation {
+	color: var(--color-white-secondary);
+	font-size: 40px;
+	position: relative;
+	width: fit-content;
+}
+
+.fire {
+	height: 100px;
+	opacity: 0.3;
+}
+
+.motivation span:last-child {
+	position: relative;
+}
+
+.motivation span:last-child::after {
+	content: url('../../Assets/fire.gif');
+	position: absolute;
+	bottom: -5px;
+	opacity: 0.4;
+}

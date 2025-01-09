@@ -1,0 +1,8 @@
+.icon {
+	--icon-fill-color: var(--color-accent);
+}
+
+.icon path,
+.icon circle {
+	fill: var(--icon-fill-color);
+}

@@ -1,0 +1,23 @@
+.type_writer {
+	font-size: 100px;
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	z-index: 2;
+	box-sizing: border-box;
+	line-height: 1;
+}
+
+.type_it {
+	color: var(--color-accent);
+	--ti-cursor-color: var(--color-accent);
+	text-shadow:
+		-1px -1px 0 var(--color-accent-dark),
+		1px -1px 0 var(--color-accent-dark),
+		-1px 1px 0 var(--color-accent-dark),
+		1px 1px 0 var(--color-accent-dark);
+}
+
+.greet_row {
+	color: var(--color-white-secondary);
+}

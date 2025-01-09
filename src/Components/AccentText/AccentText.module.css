@@ -1,0 +1,11 @@
+.word {
+	white-space: pre-line;
+}
+.word__accent {
+	color: var(--color-accent);
+	text-shadow:
+		-1px -1px 0 var(--color-accent-dark),
+		1px -1px 0 var(--color-accent-dark),
+		-1px 1px 0 var(--color-accent-dark),
+		1px 1px 0 var(--color-accent-dark);
+}
