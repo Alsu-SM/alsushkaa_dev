@@ -41,4 +41,6 @@ export enum ELEMENT_IDS {
 	IntroHand = 'intro_hand',
 	SectionAbout = 'about',
 	SectionEducation = 'education',
+	SectionExperience = 'experience',
+	SectionSkills = 'skills',
 }

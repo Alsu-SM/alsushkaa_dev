@@ -10,10 +10,11 @@
 	font-weight: 300;
 
 	--color-black-bg: #1d1d1d;
-	--color-white-font-title: #f8f8f8;
+	--color-white-font-title: #f8f8f8de;
 	--color-white-secondary: #b8b8b8e8;
 	--color-white-dark: #696969;
 	--color-blue-light: #326f95;
+	--color-blue-lighter: rgba(64, 165, 228, 0.4);
 	--color-blue-dark: #1b384b;
 	--color-blue-dark_2: #252d3e;
 	--color-blue: rgba(64, 165, 228, 1);

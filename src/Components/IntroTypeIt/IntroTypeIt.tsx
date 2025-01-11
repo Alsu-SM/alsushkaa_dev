@@ -3,13 +3,12 @@ import { IntroTypeItProps } from './types';
 
 import styles from './IntroTypeIt.module.css';
 import TypeIt from 'typeit-react';
-import { default as TypeItCore } from 'typeit';
 
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import { useUnit } from 'effector-react';
 import { $settings } from '../../Model/settings/state';
 import getTranslation from '../../Shared/getTranslation';
-import { HEART, OPTIONS, PAUSE } from './constants';
+import { OPTIONS } from './constants';
 
 function IntroTypeIt({ className, style }: IntroTypeItProps) {
 	const { language } = useUnit($settings);
@@ -17,20 +16,6 @@ function IntroTypeIt({ className, style }: IntroTypeItProps) {
 		TRANSLATION_KEYS.FrontendDeveloper,
 		language,
 	)} `;
-
-	// const getTypeItInstance = (instance: TypeItCore) => {
-	// 	instance
-	// 		.type(FRONTEND_DEVELOPER)
-	// 		.pause(PAUSE)
-	// 		.delete(FRONTEND_DEVELOPER.length)
-	// 		.pause(PAUSE)
-	// 		.type(HEART)
-	// 		.pause(PAUSE)
-	// 		.delete(HEART.length)
-	// 		.pause(PAUSE);
-
-	// 	return instance;
-	// };
 
 	return (
 		<div

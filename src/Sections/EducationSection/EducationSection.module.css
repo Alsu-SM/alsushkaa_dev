@@ -23,16 +23,7 @@
 	text-align-last: right;
 	z-index: 2;
 }
-.section_title::before {
-	content: '';
-	background: var(--color-black-bg);
-	width: calc(33vw + 10px);
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 120px;
-	z-index: -1;
-}
+
 .content {
 	display: flex;
 	justify-content: flex-start;
@@ -45,21 +36,18 @@
 	height: 100%;
 	position: relative;
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-}
-
-.column_2 {
-	height: calc(100% - 120px);
+	justify-content: flex-start;
+	flex-direction: column;
 	margin-top: auto;
 }
 
+.column_2,
 .column_3 {
 	height: calc(100% - 120px);
-	margin-top: auto;
 }
+
 .content .column:not(:last-child) {
-	border-right: 3px solid var(--color-white-dark);
+	border-right: 5px solid var(--color-accent-dark);
 }
 
 .column .image {
@@ -72,7 +60,7 @@
 	height: auto;
 	object-fit: cover;
 	opacity: 0.2;
-	bottom: -100px;
+	bottom: -50px;
 }
 
 .column_2 .image {
@@ -90,12 +78,16 @@
 	height: auto;
 	object-fit: cover;
 	opacity: 0.2;
-	bottom: -100px;
+	bottom: -50px;
 }
 
 .column:hover .image {
 	bottom: -20px;
 	opacity: 0.3;
+}
+.column_1:hover .image,
+.column_3:hover .image {
+	bottom: 0px;
 }
 
 .item {
@@ -143,9 +135,60 @@
 	text-align: right;
 }
 
-.column_1 .item {
-	margin-top: 100px;
-}
+.column_1 .item,
 .column_2 .item {
-	margin-top: 60px;
+	padding-top: 100px;
+}
+.column_3 .item {
+	margin: auto;
+	padding-bottom: 100px;
+}
+
+.matrix {
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
+	width: 100%;
+	opacity: 0.4;
+}
+
+.column .figure,
+.column .figure canvas {
+	width: 30vw;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.column .figure {
+	position: absolute;
+	bottom: 0;
+}
+
+.bg {
+	width: 100dvw;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 4;
+	background: url('../../Assets/z_4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.bg::before {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-black-bg);
+	z-index: 1;
+	opacity: 0.5;
 }

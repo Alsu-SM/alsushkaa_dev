@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { $settings } from '../../Model/settings/state';
 import { useUnit } from 'effector-react';
-import { MAX_SECONDS, TEXT_ANIMATION_TIMING } from './constants';
+import { MAX_SECONDS } from './constants';
 
 function useSlider(count: number) {
 	const [currentIndex, setCurrentIndex] = useState<number>(1);

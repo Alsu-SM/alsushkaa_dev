@@ -6,9 +6,6 @@ import { useUnit } from 'effector-react';
 import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
-import image_1 from '../../Assets/ed_1.png';
-import image_2 from '../../Assets/ed_32.png';
-import image_3 from '../../Assets/ed_2.png';
 
 function EducationSection({ className, style }: EducationSectionProps) {
 	const { language } = useUnit($settings);
@@ -41,7 +38,6 @@ function EducationSection({ className, style }: EducationSectionProps) {
 							</div>
 						</div>
 					</div>
-					<img className={styles.image} src={image_1} />
 				</div>
 				<div className={clsx(styles.column, styles.column_2)}>
 					<div className={styles.item}>
@@ -62,7 +58,6 @@ function EducationSection({ className, style }: EducationSectionProps) {
 							</div>
 						</div>
 					</div>
-					<img className={styles.image} src={image_2} />
 				</div>
 				<div className={clsx(styles.column, styles.column_3)}>
 					<div className={styles.item}>
@@ -77,9 +72,9 @@ function EducationSection({ className, style }: EducationSectionProps) {
 							day and I adore it
 						</div>
 					</div>
-					<img className={styles.image} src={image_3} />
 				</div>
 			</div>
+			<div className={styles.bg}></div>
 		</div>
 	);
 }
