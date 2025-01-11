@@ -6,6 +6,8 @@ import { useUnit } from 'effector-react';
 import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
+import Project from './Project/Project';
+import { PWA_PROJECT } from './constants';
 
 function ProjectsSection({ className, style }: ProjectsSectionProps) {
 	const { language } = useUnit($settings);
@@ -29,6 +31,9 @@ function ProjectsSection({ className, style }: ProjectsSectionProps) {
 					</div>
 				</div>
 				<div className={styles.project_type_image} />
+			</div>
+			<div className={styles.projects}>
+				<Project item={PWA_PROJECT} />
 			</div>
 			<div className={clsx(styles.project_type, styles.project_type_2)}>
 				<div className={styles.project_type_content}>
