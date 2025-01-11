@@ -6,6 +6,8 @@ import AboutSection from '../../Sections/AboutSection';
 import EducationSection from '../../Sections/EducationSection';
 import ExperienceSection from '../../Sections/ExperienceSection';
 import SkillsSection from '../../Sections/SkillsSection';
+import ContactSection from '../../Sections/ContactSection';
+import ProjectsSection from '../../Sections/ProjectsSection';
 
 function PageHome() {
 	return (
@@ -15,6 +17,8 @@ function PageHome() {
 			<EducationSection />
 			<ExperienceSection />
 			<SkillsSection />
+			<ProjectsSection />
+			<ContactSection />
 		</div>
 	);
 }

@@ -7,6 +7,7 @@ export interface NavbarProps {
 }
 
 export enum Path {
+	Home = 'intro',
 	About = 'about',
 	Education = 'education',
 	Experience = 'experience',

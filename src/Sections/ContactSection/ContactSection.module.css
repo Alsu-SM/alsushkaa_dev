@@ -1,0 +1,131 @@
+.root {
+	position: relative;
+	width: 100vw;
+	margin-top: 100px;
+	display: flex;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.title_column {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0 40px 40px;
+	position: relative;
+	gap: 20px;
+}
+.section_title {
+	color: var(--color-gray);
+	padding: 10px;
+	font-size: 150px;
+	font-weight: 1000;
+	text-transform: uppercase;
+	line-height: 0.8;
+	white-space: nowrap;
+	text-align-last: right;
+	z-index: 2;
+}
+
+.content {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.messages {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.message.message_accent {
+	font-size: 30px;
+	color: var(--color-white-font-title);
+}
+
+.message {
+	color: var(--color-white-secondary);
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contacts_title {
+	font-size: 25px;
+	color: var(--color-white-font-title);
+}
+
+.contacts_group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-left: 35px;
+}
+
+.contacts_item {
+	text-decoration: none;
+	color: var(--color-white-font-title);
+	font-size: 20px;
+	position: relative;
+	opacity: 0.6;
+	transition: all 0.3s;
+	width: fit-content;
+}
+
+.contacts_item::before {
+	content: ' ';
+	background: url('../../Assets/gummy_bears.png') no-repeat;
+	background-size: contain;
+	width: 25px;
+	height: 20px;
+	left: -35px;
+	bottom: 0px;
+	position: absolute;
+}
+
+.contacts_item:hover {
+	opacity: 1;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.link_download {
+	text-decoration: none;
+	color: var(--color-white-font-title);
+	font-size: 14px;
+}
+
+.button_download,
+.button_copy {
+	--color-accent: var(--color-blue-dark_2);
+	font-weight: 300;
+	padding: 7px 20px;
+}
+
+.image_wrapper {
+	flex: 1;
+	background: url('../../Assets/c_3.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.3;
+	border-radius: 10px;
+}
+
+.root .hand_button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	opacity: 1 !important;
+	z-index: 5;
+	transform: rotate(170deg) translateX(55%);
+}
