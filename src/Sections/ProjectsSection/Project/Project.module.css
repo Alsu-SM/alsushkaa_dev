@@ -16,6 +16,7 @@
 	font-size: 100px;
 	width: 60%;
 	font-weight: 800;
+	white-space: nowrap;
 }
 
 .description_column {
@@ -23,6 +24,7 @@
 	flex-direction: column;
 	gap: 20px;
 	text-align: right;
+	width: 60%;
 }
 
 .description {
@@ -94,6 +96,7 @@
 .image {
 	height: 40vh;
 	width: auto;
-	opacity: 0.4;
 	animation: var(--float-animation);
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
 }

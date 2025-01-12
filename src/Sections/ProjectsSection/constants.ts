@@ -1,4 +1,6 @@
 import { ProjectItem } from './types';
+import p1_result from '../../Assets/p1_result.png';
+import p2_result from '../../Assets/p2_result.gif';
 
 export const PWA_PROJECT: ProjectItem = {
 	title: 'PWA Pilot',
@@ -49,4 +51,58 @@ export const PWA_PROJECT: ProjectItem = {
 	],
 	result:
 		'The launch of the pilot was successful and it was further developed into  a full-fledged application for tracking the movement of goods from the moment of declaration of need to actual use in production',
+	imageResult: p1_result,
+};
+
+export const PUFF_TRACKER_PROJECT: ProjectItem = {
+	title: 'Puff tracker',
+	description:
+		'An application that would allow user to monitor the dynamics of nicotine consumption and include a program for slowly quitting',
+	subDescription:
+		'Track only mode or increase intervals between smoke breaks mode with flexible settings and a pleasant interface',
+	technologies: [
+		{
+			title: 'Powerful Web Application',
+			description:
+				'Correct configuration of the manifest allowed us to install the web page as an application, cache the necessary data and use puff tracker without the Internet',
+		},
+		{
+			title: 'Echarts',
+			description:
+				'Aesthetic graphs showing the dynamics of nicotine consumption and changes in the frequency of smoking breaks',
+		},
+		{
+			title: 'Effector',
+			description:
+				'State management divided into a user interface model and a smoking statistics data model',
+		},
+		{
+			title: 'LocalStorage',
+			description:
+				'A simple but effective tool for discreetly saving and restoring user data within one device',
+		},
+		{
+			title: 'Backup System',
+			description:
+				'Saving all necessary data on the user’s device in a text file has opened up the opportunity to recover deleted data or transfer it to another device.\nValidation during parsing made it possible to secure the data recovery process',
+		},
+		{
+			title: 'Bug report via email.js',
+			description:
+				'If problems arise, the user has the opportunity to call the Bug report modal window, describe the issue and email it to the developer',
+		},
+		{
+			title: 'Screenshots for bug report via html-to-image',
+			description:
+				'When opening a Bug report modal, the application takes a snapshot of the active page, compresses it and sends it along with the entered data by email to the developer',
+		},
+		{
+			title: 'Mobile Datepicker',
+			description:
+				'Aesthetic styling of the mobile datepicker component made it possible to obtain consistent functionality of a native component with beautiful styles',
+		},
+	],
+	result:
+		'I brought the application to a stable state, created a backlog and began using it with great pleasure. At the moment, nicotine consumption has decreased by half and this is just the beginning',
+	imageResult: p2_result,
 };

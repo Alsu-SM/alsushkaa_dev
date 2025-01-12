@@ -7,7 +7,7 @@ import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
 import Project from './Project/Project';
-import { PWA_PROJECT } from './constants';
+import { PUFF_TRACKER_PROJECT, PWA_PROJECT } from './constants';
 
 function ProjectsSection({ className, style }: ProjectsSectionProps) {
 	const { language } = useUnit($settings);
@@ -26,8 +26,7 @@ function ProjectsSection({ className, style }: ProjectsSectionProps) {
 					<div className={styles.project_type_title}>Work projects</div>
 					<div className={styles.project_type_description}>
 						Most work projects I took part in are under NDE, so I prepared some
-						study cases and built little wireframe examples for you to get the
-						main ideas behind them
+						study cases for you to get the main ideas behind them
 					</div>
 				</div>
 				<div className={styles.project_type_image} />
@@ -44,6 +43,9 @@ function ProjectsSection({ className, style }: ProjectsSectionProps) {
 					</div>
 				</div>
 				<div className={styles.project_type_image} />
+			</div>
+			<div className={styles.projects}>
+				<Project item={PUFF_TRACKER_PROJECT} />
 			</div>
 		</div>
 	);
