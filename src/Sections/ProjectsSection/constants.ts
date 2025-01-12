@@ -1,6 +1,7 @@
 import { ProjectItem } from './types';
 import p1_result from '../../Assets/p1_result.png';
 import p2_result from '../../Assets/p2_result.gif';
+import p3_result from '../../Assets/p3_result.gif';
 
 export const PWA_PROJECT: ProjectItem = {
 	title: 'PWA Pilot',
@@ -105,4 +106,34 @@ export const PUFF_TRACKER_PROJECT: ProjectItem = {
 	result:
 		'I brought the application to a stable state, created a backlog and began using it with great pleasure. At the moment, nicotine consumption has decreased by half and this is just the beginning',
 	imageResult: p2_result,
+};
+export const GRADIENT_PICKER_PROJECT: ProjectItem = {
+	title: 'Gradient picker',
+	description: 'Gradient generator with fine-tuning colors and positions. ',
+	subDescription:
+		'Ability to add gradients to favorites, copy CSS code and download the generated image',
+	technologies: [
+		{
+			title: 'Effector',
+			description:
+				'State management divided into a current settings model and a data model for gradients',
+		},
+		{
+			title: '@uiw/react-color',
+			description: 'Color wheel and color presets for easy gradient adjustment',
+		},
+		{
+			title: 'Screenshots via html-to-image',
+			description:
+				'Ability to save the generated gradient in png format with css code at the bottom of the image',
+		},
+		{
+			title: 'Clipboard api',
+			description:
+				'Copying the css code for the generated gradient to the clipboard by clicking on the button',
+		},
+	],
+	result:
+		'The project turned out cute and concise, I regularly use it in the development of pet projects, creating aesthetic gradients',
+	imageResult: p3_result,
 };

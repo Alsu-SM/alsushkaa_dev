@@ -7,7 +7,11 @@ import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
 import Project from './Project/Project';
-import { PUFF_TRACKER_PROJECT, PWA_PROJECT } from './constants';
+import {
+	GRADIENT_PICKER_PROJECT,
+	PUFF_TRACKER_PROJECT,
+	PWA_PROJECT,
+} from './constants';
 
 function ProjectsSection({ className, style }: ProjectsSectionProps) {
 	const { language } = useUnit($settings);
@@ -46,6 +50,7 @@ function ProjectsSection({ className, style }: ProjectsSectionProps) {
 			</div>
 			<div className={styles.projects}>
 				<Project item={PUFF_TRACKER_PROJECT} />
+				<Project item={GRADIENT_PICKER_PROJECT} />
 			</div>
 		</div>
 	);
