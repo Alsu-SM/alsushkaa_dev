@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { menuItems } from './constants';
 import { getNavItem } from './renders';
@@ -9,6 +9,8 @@ import { scrollIntoView } from '../../Utils/scrollIntoView';
 function useNavbar() {
 	const { language } = useUnit($settings);
 
+	const [isNavModalShown, setIsNavModalShown] = useState<boolean>(false);
+
 	const location = useLocation();
 
 	const navLinks: JSX.Element[] = useMemo(
@@ -16,6 +18,7 @@ function useNavbar() {
 			menuItems.map((item) => {
 				const isActive: boolean = location.hash === `#${item}`;
 				const onClick = () => {
+					setIsNavModalShown(false);
 					if (!isActive) {
 						scrollIntoView(item);
 					}
@@ -26,7 +29,15 @@ function useNavbar() {
 		[location.hash, language],
 	);
 
-	return { navLinks };
+	const handleOpen = () => {
+		setIsNavModalShown(true);
+	};
+
+	const handleClose = () => {
+		setIsNavModalShown(false);
+	};
+
+	return { navLinks, isNavModalShown, handleOpen, handleClose };
 }
 
 export default useNavbar;

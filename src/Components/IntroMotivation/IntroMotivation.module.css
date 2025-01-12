@@ -1,8 +1,10 @@
 .motivation {
 	color: var(--color-white-secondary);
-	font-size: 40px;
 	position: relative;
 	width: fit-content;
+
+	/* 1920 - 40, 375 - 20 */
+	font-size: clamp(1.25rem, 0.9466rem + 1.2945vw, 2.5rem);
 }
 
 .fire {
@@ -12,11 +14,4 @@
 
 .motivation span:last-child {
 	position: relative;
-}
-
-.motivation span:last-child::after {
-	content: url('../../Assets/fire.gif');
-	position: absolute;
-	bottom: -5px;
-	opacity: 0.4;
 }

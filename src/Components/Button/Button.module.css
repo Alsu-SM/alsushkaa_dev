@@ -20,10 +20,18 @@
 	cursor: pointer;
 	overflow: hidden;
 	color: var(--color-white-font-title);
+	/* 1920 - 20, 375 - 14  */
+	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	/* 1920 - 8/20, 375 - 4/10  */
+	padding: clamp(0.25rem, 0.1893rem + 0.2589vw, 0.5rem)
+		clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
 }
 
 .button__content {
 	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .button__background {
 	position: absolute;

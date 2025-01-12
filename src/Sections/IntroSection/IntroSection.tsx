@@ -7,9 +7,9 @@ import { ELEMENT_IDS } from '../../Shared/constants';
 
 import IntroFooter from '../../Components/IntroFooter';
 import IntroMotivation from '../../Components/IntroMotivation';
-import IntroImages from '../../Components/IntroImages';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
+import image_2_3 from '../../Assets/image_2_3.png';
 
 function IntroSection({ className, style }: IntroSectionProps) {
 	return (
@@ -28,10 +28,15 @@ function IntroSection({ className, style }: IntroSectionProps) {
 						<IntroMotivation />
 						<ContactButton className={styles.contact_button} />
 					</div>
-					<HandButton path={Path.About} className={styles.hand} />
+					<img
+						src={image_2_3}
+						className={styles.image_1}
+						id={ELEMENT_IDS.IntroImage1}
+						alt="background image 1"
+					/>
 				</div>
 				<IntroFooter />
-				<IntroImages />
+				<HandButton path={Path.About} className={styles.hand} />
 			</section>
 		</div>
 	);

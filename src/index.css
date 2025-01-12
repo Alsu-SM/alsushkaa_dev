@@ -24,9 +24,13 @@
 	--color-gray: #3b3b3b;
 	--box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.8);
 
-	--navbar-height: 100px;
-	--section-height: calc(100vh - var(--navbar-height));
+	--navbar-height: clamp(4.375rem, 3.9199rem + 1.9417vw, 6.25rem);
+	--section-height: calc(100dvh - var(--navbar-height));
 	--float-animation: float 6s ease-in-out infinite;
+
+	--text-shadow: -1px -1px 0 var(--color-accent-dark),
+		1px -1px 0 var(--color-accent-dark), -1px 1px 0 var(--color-accent-dark),
+		1px 1px 0 var(--color-accent-dark);
 }
 
 body {
@@ -61,9 +65,21 @@ body {
 	border-radius: 5px;
 }
 
+body:has([class*='Sheet_shown_']) {
+	overflow: hidden;
+}
+
+body:has([class*='Sheet_shown_'])::-webkit-scrollbar {
+	display: none;
+}
+
 #root {
 	flex-grow: 1;
 	height: 100vh;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
 }
 
 input,

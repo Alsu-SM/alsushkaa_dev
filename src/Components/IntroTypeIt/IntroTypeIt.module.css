@@ -1,11 +1,13 @@
 .type_writer {
-	font-size: 100px;
+	/* 1920 - 100, 375 - 30 */
+	font-size: clamp(1.875rem, 0.8131rem + 4.5307vw, 6.25rem);
 	display: flex;
 	flex-direction: column;
 	font-weight: 600;
 	z-index: 2;
 	box-sizing: border-box;
 	line-height: 1;
+	width: fit-content;
 }
 
 .type_it {

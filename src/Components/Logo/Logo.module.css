@@ -4,6 +4,7 @@
 }
 
 .icon {
-	width: 60px;
-	height: 60px;
+	/* 1920 - 60, 900 - 45 */
+	width: clamp(2.8125rem, 2.585rem + 0.9709vw, 3.75rem);
+	height: clamp(2.8125rem, 2.585rem + 0.9709vw, 3.75rem);
 }
