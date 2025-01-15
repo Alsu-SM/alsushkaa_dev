@@ -25,7 +25,7 @@
 	--box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.8);
 
 	--navbar-height: clamp(4.375rem, 3.9199rem + 1.9417vw, 6.25rem);
-	--section-height: calc(100dvh - var(--navbar-height));
+	--section-height: max(calc(100dvh - var(--navbar-height)), 600px);
 	--float-animation: float 6s ease-in-out infinite;
 
 	--text-shadow: -1px -1px 0 var(--color-accent-dark),

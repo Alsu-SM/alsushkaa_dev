@@ -2,7 +2,6 @@
 	position: relative;
 	height: var(--section-height);
 	width: 100dvw;
-	height: var(--section-height);
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -57,10 +56,11 @@
 	position: absolute;
 	left: 50%;
 	bottom: 1%;
+	transition: all 0.3s;
 }
 
 .image_1 {
-	width: max(70vw, 500px);
+	width: max(70vw, 520px);
 	height: 100%;
 	box-sizing: border-box;
 	object-fit: cover;
@@ -74,6 +74,11 @@
 	transition: all 0.3s;
 }
 
+@media (max-width: 1100px) and (min-width: 870px) {
+	.root .hand {
+		bottom: 100px;
+	}
+}
 @media (max-width: 870px) {
 	.root {
 		padding-bottom: 20px;

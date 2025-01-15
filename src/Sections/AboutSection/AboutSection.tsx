@@ -21,15 +21,25 @@ function AboutSection({ className, style }: AboutSectionProps) {
 			style={style}
 			id={ELEMENT_IDS.SectionAbout}
 		>
-			<div className={styles.section_title}>
-				{getTranslation(TRANSLATION_KEYS.LinkAbout, language)}
-			</div>
-			<div className={styles.column_left}>
-				<img
-					src={image_4}
-					alt="abstract bg"
-					className={clsx(styles.image, styles.image_4)}
-				/>
+			<img
+				src={image_4}
+				alt="abstract bg"
+				className={clsx(styles.image, styles.image_1)}
+			/>
+			<img
+				src={image_5}
+				alt="abstract bg"
+				className={clsx(styles.image, styles.image_2)}
+			/>
+			<div className={styles.content}>
+				<div className={styles.greeting}>
+					<div className={styles.greeting_row__accent}>
+						{getTranslation(TRANSLATION_KEYS.AboutGreetingItem_1, language)}
+					</div>
+					<div className={styles.greeting_row}>
+						{getTranslation(TRANSLATION_KEYS.AboutGreetingItem_2, language)}
+					</div>
+				</div>
 				<div className={styles.description}>
 					<Slider
 						textKeys={[
@@ -40,30 +50,76 @@ function AboutSection({ className, style }: AboutSectionProps) {
 						]}
 					/>
 				</div>
-				<div className={styles.standard}>
-					<AccentText
-						textKey={TRANSLATION_KEYS.AboutStandard}
-						accentIndexes={{
-							[Language.EN]: [6, 13, 14, 15],
-							[Language.RU]: [8, 14, 15, 16],
-						}}
-					/>
+				<div className={styles.description_alternative}>
+					<div className={styles.description_alternative_item}>
+						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_1, language)}
+					</div>
+					<div className={styles.description_alternative_item}>
+						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_2, language)}
+					</div>
+					<div className={styles.description_alternative_item}>
+						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_3, language)}
+					</div>
+					<div className={styles.description_alternative_item}>
+						{getTranslation(TRANSLATION_KEYS.AboutDescriptionItem_4, language)}
+					</div>
+					<div
+						className={clsx(
+							styles.description_alternative_item,
+							styles.description_alternative_item__short,
+						)}
+					>
+						{getTranslation(
+							TRANSLATION_KEYS.AboutDescriptionItem_1_short,
+							language,
+						)}
+					</div>
+					<div
+						className={clsx(
+							styles.description_alternative_item,
+							styles.description_alternative_item__short,
+						)}
+					>
+						{getTranslation(
+							TRANSLATION_KEYS.AboutDescriptionItem_2_short,
+							language,
+						)}
+					</div>
+					<div
+						className={clsx(
+							styles.description_alternative_item,
+							styles.description_alternative_item__short,
+						)}
+					>
+						{getTranslation(
+							TRANSLATION_KEYS.AboutDescriptionItem_3_short,
+							language,
+						)}
+					</div>
+					<div
+						className={clsx(
+							styles.description_alternative_item,
+							styles.description_alternative_item__short,
+						)}
+					>
+						{getTranslation(
+							TRANSLATION_KEYS.AboutDescriptionItem_4_short,
+							language,
+						)}
+					</div>
 				</div>
 			</div>
-			<div className={styles.column_right}>
-				<div className={styles.greeting}>
-					<div className={styles.greeting_row__accent}>
-						{getTranslation(TRANSLATION_KEYS.AboutGreetingItem_1, language)}
-					</div>
-					<div className={styles.greeting_row}>
-						{getTranslation(TRANSLATION_KEYS.AboutGreetingItem_2, language)}
-					</div>
-				</div>
-				<img
-					src={image_5}
-					alt="abstract bg"
-					className={clsx(styles.image, styles.image_5)}
+			<div className={styles.standard}>
+				<AccentText
+					textKey={TRANSLATION_KEYS.AboutStandard}
+					accentIndexes={{
+						[Language.EN]: [6, 13, 14, 15],
+						[Language.RU]: [8, 14, 15, 16],
+					}}
 				/>
+			</div>
+			<div className={clsx(styles.section_title, styles[language])}>
+				{getTranslation(TRANSLATION_KEYS.LinkAbout, language)}
 			</div>
 		</div>
 	);

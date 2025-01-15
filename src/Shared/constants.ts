@@ -25,6 +25,10 @@ export enum TRANSLATION_KEYS {
 	AboutDescriptionItem_2 = 'about-description-item-2',
 	AboutDescriptionItem_3 = 'about-description-item-3',
 	AboutDescriptionItem_4 = 'about-description-item-4',
+	AboutDescriptionItem_1_short = 'about-description-item-1_short',
+	AboutDescriptionItem_2_short = 'about-description-item-2_short',
+	AboutDescriptionItem_3_short = 'about-description-item-3_short',
+	AboutDescriptionItem_4_short = 'about-description-item-4_short',
 	AboutStandard = 'about-standard',
 }
 

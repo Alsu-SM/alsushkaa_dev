@@ -59,15 +59,15 @@ function useSlider(count: number) {
 		setCurrentSeconds(0);
 	};
 
-	useEffect(() => {
-		intervalRef.current = setInterval(handleIncreaseSeconds, 50);
+	// useEffect(() => {
+	// 	intervalRef.current = setInterval(handleIncreaseSeconds, 50);
 
-		return () => {
-			if (intervalRef.current) {
-				clearInterval(intervalRef.current);
-			}
-		};
-	}, []);
+	// 	return () => {
+	// 		if (intervalRef.current) {
+	// 			clearInterval(intervalRef.current);
+	// 		}
+	// 	};
+	// }, []);
 
 	useEffect(() => {
 		animateTextChange();

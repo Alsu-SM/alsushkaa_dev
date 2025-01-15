@@ -1,9 +1,7 @@
 .root {
 	position: relative;
-	font-size: 34px;
 	color: var(--color-white-secondary);
-	width: 100%;
-	height: 100%;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	padding: 40px 0;
@@ -11,11 +9,13 @@
 	gap: 20px;
 	align-items: center;
 	justify-content: space-around;
+	flex-wrap: wrap-reverse;
+	width: max(80%, 900px);
 }
 
 .content_row {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -40,7 +40,8 @@
 	text-align: right;
 	line-height: 1.4;
 	height: 100%;
-	font-size: 30px;
+	/* 1920 - 32, 375 - 18 */
+	font-size: clamp(1rem, 0.7573rem + 1.0356vw, 2rem);
 	font-weight: 400;
 }
 
@@ -59,14 +60,16 @@
 }
 
 .point_button_image {
-	width: 30px;
+	/* 1920 - 30, 375 - 20  */
+	width: clamp(1.25rem, 1.0983rem + 0.6472vw, 1.875rem);
 	height: auto;
 	opacity: 0.4;
 	transition: all 0.3s;
 }
 
 .arrow_button_image {
-	width: 45px;
+	/* 1920 - 45, 375 - 30  */
+	width: clamp(1.875rem, 1.6475rem + 0.9709vw, 2.8125rem);
 	height: auto;
 	opacity: 0.7;
 	transition: all 0.3s;
@@ -91,46 +94,46 @@
 .arrow_button__left:hover .arrow_button_image {
 	transform: rotate(180deg) translateY(6px);
 }
-/* 
-.root:before,
-.root:after {
-	content: '';
-	position: absolute;
-	left: -5px;
-	top: -5px;
-	background: linear-gradient(
-		45deg,
-		#2600fb,
-		#00c3ff,
-		#006eff,
-		#3700ff,
-		#0084ff,
-		#1900fb,
-		#006eff,
-		#00c3ff,
-		#00d9ff,
-		#0099ff
-	);
-	background-size: 400%;
-	width: calc(100% + 10px);
-	height: calc(100% + 10px);
-	z-index: -1;
-	animation: steam 120s linear infinite;
-	opacity: 0.3;
-}
 
-@keyframes steam {
-	0% {
-		background-position: 0 0;
+@media (max-width: 900px) {
+	.root .content_row {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
 	}
-	50% {
-		background-position: 400% 0;
+
+	.root {
+		width: fit-content;
 	}
-	100% {
-		background-position: 0 0;
+	.content {
+		width: 70%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.timer {
+		position: absolute;
+		bottom: -5px;
+		z-index: -1;
+		right: -50px;
+		width: 50px;
+		height: 50px;
 	}
 }
 
-.root:after {
-	filter: blur(50px);
-} */
+@media (max-width: 500px) {
+	.content {
+		width: calc(100% - 30px);
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.timer {
+		position: absolute;
+		bottom: 10px;
+		z-index: -1;
+		right: -30px;
+		width: 30px;
+		height: 30px;
+	}
+}

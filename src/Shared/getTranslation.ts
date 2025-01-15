@@ -30,7 +30,7 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 	],
 	[
 		TRANSLATION_KEYS.ContactMe,
-		{ [Language.EN]: 'contact me', [Language.RU]: 'свяжитесь со мной' },
+		{ [Language.EN]: 'contact me', [Language.RU]: 'связаться' },
 	],
 	[
 		TRANSLATION_KEYS.HiIAmName,
@@ -95,7 +95,7 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 	[
 		TRANSLATION_KEYS.AboutGreetingItem_1,
 		{
-			[Language.EN]: `Hi! My name is Alsu and I will help you get the most out of modern web application development`,
+			[Language.EN]: `Hi! My name is Alsu and I will help you get \nthe most out of modern web application \ndevelopment`,
 			[Language.RU]:
 				'Привет! Меня зовут Алсу, и я помогу вам извлечь максимум из разработки современных веб-приложений',
 		},
@@ -103,7 +103,7 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 	[
 		TRANSLATION_KEYS.AboutGreetingItem_2,
 		{
-			[Language.EN]: `I equally enjoy building complex dashboards and cute landing pages <3`,
+			[Language.EN]: `I equally enjoy building complex \ndashboards and cute landing pages <3`,
 			[Language.RU]:
 				'Мне одинаково нравится создавать сложные панели мониторинга и симпатичные целевые страницы <3',
 		},
@@ -142,10 +142,43 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 		},
 	],
 	[
+		TRANSLATION_KEYS.AboutDescriptionItem_1_short,
+		{
+			[Language.EN]: `I've been working in the industry since 2020 and it's been amazing`,
+			[Language.RU]:
+				'Я работаю в сфере с 2020 года, и это было потрясающе. За это время я многому научилась и искренне полюбила процесс разработки веб интерфейсов',
+		},
+	],
+	[
+		TRANSLATION_KEYS.AboutDescriptionItem_2_short,
+		{
+			[Language.EN]: `My main areas of expertise were metallurgy, water supply and mining.`,
+			[Language.RU]:
+				'Моими основными областями деятельности были металлургия, водоснабжение и горнодобывающая промышленность — серьезные вещи. Я ценю чувство полезности и принадлежности к важному делу.',
+		},
+	],
+	[
+		TRANSLATION_KEYS.AboutDescriptionItem_3_short,
+		{
+			[Language.EN]: ` I value the feeling of usefulness and belonging to an important cause`,
+			[Language.RU]:
+				'И это много данных, аналитики и сложных задач, что поддерживает азарт и вовлеченность и дарит чувство удовлетворения после решения очередной непростой проблемы',
+		},
+	],
+	[
+		TRANSLATION_KEYS.AboutDescriptionItem_4_short,
+		{
+			[Language.EN]: `Every day brings new opportunities to learn something new and I love it
+`,
+			[Language.RU]:
+				'Для дальнейшего изучения я создала несколько пет проектов и в настоящее время продвигаюсь по своей дорожной карте разработки. Каждый день дарит новые возможности узнать что-то новое и мне это нравится',
+		},
+	],
+	[
 		TRANSLATION_KEYS.AboutStandard,
 		{
-			[Language.EN]: `I make sure my code is clean and an image \nI create is pleasing and accessible`,
-			[Language.RU]: `Я слежу за тем, чтобы мой код был чистым, \nа создаваемый мной визуал — приятным и доступным.`,
+			[Language.EN]: `I make sure my code is clean and an image I create is pleasing and accessible`,
+			[Language.RU]: `Я слежу за тем, чтобы мой код был чистым, а создаваемый мной визуал — приятным и доступным.`,
 		},
 	],
 ]);
