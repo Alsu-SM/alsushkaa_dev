@@ -9,7 +9,7 @@
 	box-sizing: border-box;
 	position: sticky;
 	top: 0;
-	background: var(--color-black-bg);
+	background: var(--color-black-bg_2);
 	z-index: 100;
 }
 

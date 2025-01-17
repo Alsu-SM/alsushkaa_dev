@@ -1,4 +1,5 @@
 import React from 'react';
+import { TRANSLATION_KEYS } from '../../Shared/constants';
 
 export interface SkillsSectionProps {
 	className?: string;
@@ -6,6 +7,6 @@ export interface SkillsSectionProps {
 }
 
 export type SkillGroup = {
-	title?: string;
-	items: string[];
+	title?: TRANSLATION_KEYS;
+	items: TRANSLATION_KEYS[];
 };

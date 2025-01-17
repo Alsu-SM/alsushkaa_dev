@@ -9,7 +9,7 @@ import IntroFooter from '../../Components/IntroFooter';
 import IntroMotivation from '../../Components/IntroMotivation';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
-import image_2_3 from '../../Assets/image_2_3.png';
+import image_2_3 from '../../Assets/img_n_2.png';
 
 function IntroSection({ className, style }: IntroSectionProps) {
 	return (

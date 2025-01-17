@@ -1564,16 +1564,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gsap/react@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@gsap/react@npm:2.1.0"
-  dependencies:
-    gsap: "npm:^3.12.4"
-    react: "npm:>=16"
-  checksum: 00ec2d2e312aae8ba56d323e373b70255e67b3825490c92087a18b02405711b31cfe7569e8c9eaf342b5b5c89e6716c6e16e1825ff751aa834c3ce9134f95b73
-  languageName: node
-  linkType: hard
-
 "@humanwhocodes/config-array@npm:^0.11.13":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -2947,6 +2937,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "date-fns@npm:4.1.0"
+  checksum: b79ff32830e6b7faa009590af6ae0fb8c3fd9ffad46d930548fbb5acf473773b4712ae887e156ba91a7b3dc30591ce0f517d69fd83bd9c38650fdc03b4e0bac8
+  languageName: node
+  linkType: hard
+
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
@@ -3929,13 +3926,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gsap@npm:^3.12.4, gsap@npm:^3.12.5":
-  version: 3.12.5
-  resolution: "gsap@npm:3.12.5"
-  checksum: cb38e89bd577fc18c9cf77e4aeb83617603b1e0fa768fe8ca1acd836fd852936722e186a88c9cf6ece42e53407edd45324be2bfe35a41f424c5f2c2b33fd1a98
-  languageName: node
-  linkType: hard
-
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -3995,15 +3985,6 @@ __metadata:
   dependencies:
     function-bind: "npm:^1.1.2"
   checksum: 9e27e70e8e4204f4124c8f99950d1ba2b1f5174864fd39ff26da190f9ea6488c1b3927dcc64981c26d1f637a971783c9489d62c829d393ea509e6f1ba20370bb
-  languageName: node
-  linkType: hard
-
-"hex-to-css-filter@npm:^5.4.0":
-  version: 5.4.0
-  resolution: "hex-to-css-filter@npm:5.4.0"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  checksum: 16ab961a15338b8363a5544adfe393393ada4ffcdf9dd89919c682ec9027fff8eaa0d9c8538deda2a891d66b2b9fd330fd626f298c44bf398016388cd6ef09db
   languageName: node
   linkType: hard
 
@@ -5278,7 +5259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:>=16, react@npm:>=18.2.0, react@npm:^18.2.0":
+"react@npm:>=18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -5291,7 +5272,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react_vite_boilerplate@workspace:."
   dependencies:
-    "@gsap/react": "npm:^2.1.0"
     "@types/eslint": "npm:8"
     "@types/react": "npm:^18.2.55"
     "@types/react-dom": "npm:^18.2.19"
@@ -5300,6 +5280,7 @@ __metadata:
     "@vitejs/plugin-basic-ssl": "npm:1.0.2"
     "@vitejs/plugin-react": "npm:4.2.1"
     clsx: "npm:2.1.0"
+    date-fns: "npm:^4.1.0"
     effector: "npm:23.1.0"
     effector-react: "npm:23.1.0"
     eslint: "npm:8.56.0"
@@ -5309,8 +5290,6 @@ __metadata:
     eslint-plugin-react-hooks: "npm:4.6.0"
     eslint-plugin-react-refresh: "npm:0.4.5"
     eslint-plugin-simple-import-sort: "npm:10.0.0"
-    gsap: "npm:^3.12.5"
-    hex-to-css-filter: "npm:^5.4.0"
     prettier: "npm:3.1.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -6042,13 +6021,6 @@ __metadata:
   peerDependencies:
     typescript: ">=4.2.0"
   checksum: 8ddb493e7ae581d3f57a2e469142feb60b420d4ad8366ab969fe8e36531f8f301f370676b47e8d97f28b5f5fd10d6f2d55f656943a8546ef95e35ce5cf117754
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.3.0":
-  version: 2.8.1
-  resolution: "tslib@npm:2.8.1"
-  checksum: 9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
   languageName: node
   linkType: hard
 

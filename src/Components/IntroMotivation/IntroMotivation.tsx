@@ -13,7 +13,7 @@ function IntroMotivation({ className, style }: IntroMotivationProps) {
 			style={style}
 		>
 			<AccentText
-				textKey={TRANSLATION_KEYS.Motivation}
+				textKey={TRANSLATION_KEYS.IntroMotivation}
 				accentIndexes={{ [Language.EN]: [5], [Language.RU]: [5] }}
 			/>
 		</div>

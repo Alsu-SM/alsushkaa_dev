@@ -1,33 +1,29 @@
 .root {
 	position: relative;
-	height: 100dvh;
-	padding-top: var(--navbar-height);
 	width: 100vw;
 	display: flex;
 	overflow: hidden;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+	--title-font-size: clamp(2.5rem, 0.8313rem + 7.1197vw, 9.375rem);
+	--message-height: clamp(8.125rem, 9.5833rem + -6.2222vw, 3.75rem);
 }
 
 .section_title {
 	color: var(--color-gray);
-	bottom: -10px;
-	left: -10px;
-	font-size: 150px;
+	font-size: var(--title-font-size);
 	font-weight: 1000;
 	text-transform: uppercase;
 	line-height: 0.8;
 	white-space: nowrap;
 	z-index: 2;
-	padding-top: 60px;
+	padding: 40px;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	margin-right: auto;
-	background: rgba(0, 0, 0, 0.2);
 	border-top: 5px solid var(--color-blue-dark_2);
-	height: 185px;
 }
 
 .content {
@@ -41,7 +37,8 @@
 	width: 40%;
 	border-right: 5px solid var(--color-blue-dark_2);
 	justify-content: center;
-	padding: 40px;
+	align-items: center;
+	padding: 20px 0;
 }
 
 .experience_message_column {
@@ -52,16 +49,15 @@
 }
 
 .message {
-	padding: 40px 20px 40px 100px;
+	padding: clamp(1.25rem, 0.9466rem + 1.2945vw, 2.5rem);
 	text-align: right;
-	font-size: 35px;
+	font-size: clamp(1.25rem, 0.8979rem + 1.1268vw, 2.25rem);
 	border-bottom: 5px solid var(--color-blue-dark_2);
 	color: var(--color-white-secondary);
 }
 
 .experience {
 	display: flex;
-	justify-content: flex-start;
 	flex: 1;
 	padding: 40px;
 	position: relative;
@@ -86,18 +82,18 @@
 }
 
 .item_date {
-	font-size: 30px;
+	font-size: clamp(1.25rem, 1.0983rem + 0.6472vw, 1.875rem);
 	font-weight: 700;
 	color: var(--color-blue);
 	opacity: 0.7;
 }
 
 .item_title {
-	font-size: 30px;
+	font-size: clamp(1.25rem, 1.0983rem + 0.6472vw, 1.875rem);
 }
 
 .item_description {
-	font-size: 18px;
+	font-size: clamp(1rem, 0.9393rem + 0.2589vw, 1.25rem);
 	padding: 20px 0;
 }
 
@@ -117,10 +113,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	color: var(--color-white-secondary);
 }
 
 .responsibility_title {
-	font-size: 20px;
+	font-size: clamp(1rem, 0.9393rem + 0.2589vw, 1.25rem);
 	font-weight: 400;
 }
 
@@ -128,6 +125,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
 }
 
 .responsibility_description_item {
@@ -138,7 +136,7 @@
 }
 
 .icon {
-	width: 30px;
+	width: clamp(1.375rem, 1.2536rem + 0.5178vw, 1.875rem);
 	height: auto;
 	opacity: 0.5;
 }
@@ -154,4 +152,103 @@
 	background-size: cover;
 	background-position: top right;
 	border-left: 5px solid var(--color-blue-dark_2);
+}
+
+@media (max-width: 1500px) {
+	.root,
+	.content {
+		flex-direction: column-reverse;
+	}
+
+	.content {
+		padding-bottom: var(--message-height);
+	}
+	.experience_message_column {
+		width: 100%;
+		border-bottom: var(--border);
+	}
+
+	.item {
+		padding: clamp(1.25rem, 0.8333rem + 1.7778vw, 2.5rem);
+	}
+
+	.message {
+		position: absolute;
+		bottom: 0;
+		height: var(--message-height);
+		border-bottom: none;
+		border-top: var(--border);
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+	}
+
+	.image_wrapper {
+		display: none;
+	}
+
+	.experience {
+		flex-direction: column;
+		padding: 0;
+		gap: 20px;
+	}
+
+	.section_title {
+		line-height: 1;
+		padding-top: 0;
+		border-top: none;
+		border-bottom: var(--border);
+		height: unset;
+		padding: 20px;
+	}
+
+	.experience_column .item,
+	.experience_message_column .item {
+		width: 70%;
+	}
+	.content .experience_column {
+		width: 100%;
+	}
+
+	.experience_column .item {
+		margin-left: auto;
+		text-align: right;
+	}
+
+	.experience_column .responsibility_title {
+		text-align: left;
+	}
+	.experience_column .responsibility_description_item {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (max-width: 1000px) {
+	.experience_column .item,
+	.experience_message_column .item {
+		width: 90%;
+	}
+}
+
+@media (max-width: 700px) {
+	.experience_column .item,
+	.experience_message_column .item {
+		width: 100%;
+	}
+
+	.message {
+		width: 100%;
+	}
+
+	.experience_column .item {
+		margin-left: unset;
+		text-align: left;
+	}
+
+	.experience_column .responsibility_title {
+		text-align: left;
+	}
+	.experience_column .responsibility_description_item {
+		flex-direction: row;
+	}
 }

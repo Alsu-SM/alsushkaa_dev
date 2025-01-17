@@ -61,11 +61,12 @@
 }
 
 .technology_item_title {
-	font-size: 20px;
+	font-size: 24px;
 	position: relative;
 }
 
 .technology_item_description {
+	font-size: 18px;
 	white-space: pre-line;
 }
 .technology_item_title::before {

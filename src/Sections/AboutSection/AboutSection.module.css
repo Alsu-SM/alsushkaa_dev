@@ -79,7 +79,7 @@
 	/* 1920 - 32, 375 - 18 */
 	font-size: clamp(1rem, 0.7573rem + 1.0356vw, 2rem);
 	white-space: pre-line;
-	border: 5px solid var(--color-accent-dark);
+	border: var(--border);
 	border-left: none;
 }
 
@@ -111,6 +111,7 @@
 	padding: 20px calc(var(--right-image-width) + 40px) 20px
 		calc(var(--title-size) + 40px);
 	box-sizing: border-box;
+	align-items: center;
 }
 
 .description_alternative_item {
@@ -150,8 +151,8 @@
 }
 
 .standard {
-	/* 1920 - 32, 375 - 14 */
-	font-size: clamp(0.875rem, 0.6019rem + 1.165vw, 2rem);
+	/* 1920 - 32, 375 - 16 */
+	font-size: clamp(1rem, 0.6479rem + 1.1268vw, 2rem);
 	display: flex;
 	align-items: center;
 	margin-top: auto;

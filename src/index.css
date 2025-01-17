@@ -9,14 +9,17 @@
 	font-size: 16px;
 	font-weight: 300;
 
-	--color-black-bg: #1d1d1d;
+	/* --color-black-bg: #1d1d1d;  */
+	--color-black-bg: #171717;
+	--color-black-bg_2: #121212;
 	--color-white-font-title: #f8f8f8de;
 	--color-white-secondary: #b8b8b8e8;
 	--color-white-dark: #696969;
-	--color-blue-light: #326f95;
+	--color-blue-light: #326f95d8;
 	--color-blue-lighter: rgba(64, 165, 228, 0.4);
 	--color-blue-dark: #1b384b;
-	--color-blue-dark_2: #252d3e;
+	/* --color-blue-dark_2: #252d3e; //prev */
+	--color-blue-dark_2: #232e44;
 	--color-blue: rgba(64, 165, 228, 1);
 	--color-red: #d76d71;
 	--color-accent: var(--color-blue-light);
@@ -27,10 +30,12 @@
 	--navbar-height: clamp(4.375rem, 3.9199rem + 1.9417vw, 6.25rem);
 	--section-height: max(calc(100dvh - var(--navbar-height)), 600px);
 	--float-animation: float 6s ease-in-out infinite;
+	--border: 5px solid var(--color-accent-dark);
 
 	--text-shadow: -1px -1px 0 var(--color-accent-dark),
 		1px -1px 0 var(--color-accent-dark), -1px 1px 0 var(--color-accent-dark),
 		1px 1px 0 var(--color-accent-dark);
+	--background-overlay: rgba(0, 0, 0, 0.2);
 }
 
 body {

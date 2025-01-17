@@ -5,7 +5,7 @@
 	/* 1920 - 100, 900 - 20 */
 	padding: 20px clamp(1.25rem, 0.0364rem + 5.178vw, 6.25rem);
 	box-sizing: border-box;
-	border-top: 5px solid var(--color-accent-dark);
+	border-top: var(--border);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

@@ -3,7 +3,7 @@ import { TRANSLATION_KEYS } from './constants';
 
 export type DictionaryItem = Record<Language, string>;
 
-const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
+export const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 	[
 		TRANSLATION_KEYS.LinkAbout,
 		{ [Language.EN]: 'about', [Language.RU]: 'обо мне' },
@@ -33,18 +33,18 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 		{ [Language.EN]: 'contact me', [Language.RU]: 'связаться' },
 	],
 	[
-		TRANSLATION_KEYS.HiIAmName,
+		TRANSLATION_KEYS.IntroHiIAmName,
 		{ [Language.EN]: "Hi I'm Alsu", [Language.RU]: 'Привет, я Алсу' },
 	],
 	[
-		TRANSLATION_KEYS.FrontendDeveloper,
+		TRANSLATION_KEYS.IntroFrontendDeveloper,
 		{
 			[Language.EN]: 'Frontend Developer',
 			[Language.RU]: 'Фронтенд разработчик',
 		},
 	],
 	[
-		TRANSLATION_KEYS.Motivation,
+		TRANSLATION_KEYS.IntroMotivation,
 		{
 			[Language.EN]: `Complexity and beauty\n are my passion`,
 			[Language.RU]: `Сложность и красота - \nмоя страсть`,
@@ -179,6 +179,370 @@ const translateDictionary = new Map<TRANSLATION_KEYS, DictionaryItem>([
 		{
 			[Language.EN]: `I make sure my code is clean and an image I create is pleasing and accessible`,
 			[Language.RU]: `Я слежу за тем, чтобы мой код был чистым, а создаваемый мной визуал — приятным и доступным.`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationYears_1,
+		{
+			[Language.EN]: `2018 — 2019`,
+			[Language.RU]: `2018 — 2019`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationYears_2,
+		{
+			[Language.EN]: `2019 — 2023`,
+			[Language.RU]: `2019 — 2023`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationYears_3,
+		{
+			[Language.EN]: `2023 — ∞`,
+			[Language.RU]: `2023 — ∞`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationTitle_1,
+		{
+			[Language.EN]: `Technical University of Dortmund, Germany`,
+			[Language.RU]: `Technical University of Dortmund, Germany`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationTitle_2,
+		{
+			[Language.EN]: `The National Research State University of Nizhny Novgorod, Russia`,
+			[Language.RU]: `The National Research State University of Nizhny Novgorod, Russia`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationTitle_3,
+		{
+			[Language.EN]: `life journey`,
+			[Language.RU]: `life journey`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationDescription_1,
+		{
+			[Language.EN]: `Faculty of Electrical Engineering and Information Technology: Information and Communication Technologies`,
+			[Language.RU]: `Faculty of Electrical Engineering and Information Technology: Information and Communication Technologies`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationDescription_2,
+		{
+			[Language.EN]: `Institute of Information Technology, Mathematics and Mechanics: Applied Informatics`,
+			[Language.RU]: `Institute of Information Technology, Mathematics and Mechanics: Applied Informatics`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationDescription_3_1,
+		{
+			[Language.EN]: `I continue to explore this world, try new things, pick up modern technologies and hone old skills`,
+			[Language.RU]: `I continue to explore this world, try new things, pick up modern technologies and hone old skills`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationDescription_3_2,
+		{
+			[Language.EN]: `In this field you have no choice but to learn something new every day and I adore it`,
+			[Language.RU]: `In this field you have no choice but to learn something new every day and I adore it`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationCoreSkillsTitle,
+		{
+			[Language.EN]: `Core skills:`,
+			[Language.RU]: `Core skills:`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationCoreSkills_1,
+		{
+			[Language.EN]: `data structures, object-oriented programming, electrostatics, electrodynamics, higher mathematics, spoken and written German`,
+			[Language.RU]: `data structures, object-oriented programming, electrostatics, electrodynamics, higher mathematics, spoken and written German`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.EducationCoreSkills_2,
+		{
+			[Language.EN]: `design patterns, data structures, object-oriented programming, basics and depths of various programming languages including C, C# and JS, higher mathematics, spoken and written English.`,
+			[Language.RU]: `design patterns, data structures, object-oriented programming, basics and depths of various programming languages including C, C# and JS, higher mathematics, spoken and written English.`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1,
+		{
+			[Language.EN]: `Technical skills`,
+			[Language.RU]: `Technical skills`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2,
+		{
+			[Language.EN]: `Soft skills`,
+			[Language.RU]: `Soft skills`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_3,
+		{
+			[Language.EN]: `Languages`,
+			[Language.RU]: `Languages`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_GroupTitle_1,
+		{
+			[Language.EN]: `Layout, Logic, Style`,
+			[Language.RU]: `Layout, Logic, Style`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_GroupTitle_2,
+		{
+			[Language.EN]: `State Management`,
+			[Language.RU]: `State Management`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_GroupTitle_3,
+		{
+			[Language.EN]: `Web-API`,
+			[Language.RU]: `Web-API`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_GroupTitle_4,
+		{
+			[Language.EN]: `Architectural Knowledge`,
+			[Language.RU]: `Architectural Knowledge`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_GroupTitle_5,
+		{
+			[Language.EN]: `Miscellaneous`,
+			[Language.RU]: `Miscellaneous`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_1_Item_1,
+		{
+			[Language.EN]: `Javascript, Typescript, React`,
+			[Language.RU]: `Javascript, Typescript, React`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_1_Item_2,
+		{
+			[Language.EN]: `HTML5, CSS3, SCSS, styled components, CSS modules`,
+			[Language.RU]: `HTML5, CSS3, SCSS, styled components, CSS modules`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_1_Item_3,
+		{
+			[Language.EN]: `Mobile-First, Desktop-First approaches`,
+			[Language.RU]: `Mobile-First, Desktop-First approaches`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_2_Item_1,
+		{
+			[Language.EN]: `Effector, Effector-React`,
+			[Language.RU]: `Effector, Effector-React`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_2_Item_2,
+		{
+			[Language.EN]: `Axios, Fetch, XMLHttpRequest, Remote Procedure Call`,
+			[Language.RU]: `Axios, Fetch, XMLHttpRequest, Remote Procedure Call`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_2_Item_3,
+		{
+			[Language.EN]: `React-Redux, Redux-Toolkit, Redux-Saga, Redux-Thunk`,
+			[Language.RU]: `React-Redux, Redux-Toolkit, Redux-Saga, Redux-Thunk`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_2_Item_4,
+		{
+			[Language.EN]: `WebSocket, Stomp.js`,
+			[Language.RU]: `WebSocket, Stomp.js`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_2_Item_5,
+		{
+			[Language.EN]: `Keycloak JS, Keycloak custom theme, client oAuth2 call`,
+			[Language.RU]: `Keycloak JS, Keycloak custom theme, client oAuth2 call`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_3_Item_1,
+		{
+			[Language.EN]: `Online / offline state`,
+			[Language.RU]: `Online / offline state`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_3_Item_2,
+		{
+			[Language.EN]: `Background Tasks API`,
+			[Language.RU]: `Background Tasks API`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_3_Item_3,
+		{
+			[Language.EN]: `USB Devices API, Bluetooth API, NFC API`,
+			[Language.RU]: `USB Devices API, Bluetooth API, NFC API`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_3_Item_4,
+		{
+			[Language.EN]: `Barcode Detector API`,
+			[Language.RU]: `Barcode Detector API`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_3_Item_5,
+		{
+			[Language.EN]: `IndexedDB API`,
+			[Language.RU]: `IndexedDB API`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_4_Item_1,
+		{
+			[Language.EN]: `Design Patterns`,
+			[Language.RU]: `Design Patterns`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_4_Item_2,
+		{
+			[Language.EN]: `Model View Controller Patterns`,
+			[Language.RU]: `Model View Controller Patterns`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_5_Item_1,
+		{
+			[Language.EN]: `React-XArrows, React-Beautiful-DND, React-Draggable`,
+			[Language.RU]: `React-XArrows, React-Beautiful-DND, React-Draggable`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_5_Item_2,
+		{
+			[Language.EN]: `Echarts, HighCharts`,
+			[Language.RU]: `Echarts, HighCharts`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_5_Item_3,
+		{
+			[Language.EN]: `Figma, Photoshop`,
+			[Language.RU]: `Figma, Photoshop`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_5_Item_4,
+		{
+			[Language.EN]: `git, GitLab, GitHub`,
+			[Language.RU]: `git, GitLab, GitHub`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_1_Group_5_Item_5,
+		{
+			[Language.EN]: `Agile, Scrum & Kanban workflows`,
+			[Language.RU]: `Agile, Scrum & Kanban workflows`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_1,
+		{
+			[Language.EN]: `Desire to learn and grow`,
+			[Language.RU]: `Desire to learn and grow`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_2,
+		{
+			[Language.EN]: `Team work`,
+			[Language.RU]: `Team work`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_3,
+		{
+			[Language.EN]: `Responsibility & Pro-activity`,
+			[Language.RU]: `Responsibility & Pro-activity`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_4,
+		{
+			[Language.EN]: `Time Management`,
+			[Language.RU]: `Time Management`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_5,
+		{
+			[Language.EN]: `Critical thinking`,
+			[Language.RU]: `Critical thinking`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_6,
+		{
+			[Language.EN]: `Emotional intelligence`,
+			[Language.RU]: `Emotional intelligence`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_2_Item_7,
+		{
+			[Language.EN]: `Adaptability`,
+			[Language.RU]: `Adaptability`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_3_Item_1,
+		{
+			[Language.EN]: `Russian — native`,
+			[Language.RU]: `Russian — native`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_3_Item_2,
+		{
+			[Language.EN]: `English — C1 certified, ~B2 actual`,
+			[Language.RU]: `English — C1 certified, ~B2 actual`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsType_3_Item_3,
+		{
+			[Language.EN]: `German  — C1 certified, ~A2-B1 actual`,
+			[Language.RU]: `German  — C1 certified, ~A2-B1 actual`,
+		},
+	],
+	[
+		TRANSLATION_KEYS.SkillsMessage,
+		{
+			[Language.EN]: `I am a fast and diligent learner and any skill you find missing in this page is an opportunity for me to gain new knowledge`,
+			[Language.RU]: `I am a fast and diligent learner and any skill you find missing in this page is an opportunity for me to gain new knowledge`,
 		},
 	],
 ]);

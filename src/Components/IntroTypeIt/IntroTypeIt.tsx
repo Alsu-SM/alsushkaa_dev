@@ -13,7 +13,7 @@ import { OPTIONS } from './constants';
 function IntroTypeIt({ className, style }: IntroTypeItProps) {
 	const { language } = useUnit($settings);
 	const FRONTEND_DEVELOPER = `${getTranslation(
-		TRANSLATION_KEYS.FrontendDeveloper,
+		TRANSLATION_KEYS.IntroFrontendDeveloper,
 		language,
 	)} `;
 
@@ -24,7 +24,7 @@ function IntroTypeIt({ className, style }: IntroTypeItProps) {
 			id={ELEMENT_IDS.IntroTypeIt}
 		>
 			<span className={styles.greet_row}>
-				{getTranslation(TRANSLATION_KEYS.HiIAmName, language)}
+				{getTranslation(TRANSLATION_KEYS.IntroHiIAmName, language)}
 			</span>
 			<TypeIt
 				className={styles.type_it}

@@ -1,46 +1,50 @@
+import { TRANSLATION_KEYS } from '../../Shared/constants';
 import { SkillGroup } from './types';
 
 export const technicalSkillGroups: SkillGroup[] = [
 	{
-		title: 'Layout, Logic, Style',
+		title: TRANSLATION_KEYS.SkillsType_1_GroupTitle_1,
 		items: [
-			'Javascript, Typescript, React',
-			'HTML5, CSS3, SCSS, styled components, CSS modules',
-			'Mobile-First, Desktop-First approaches',
+			TRANSLATION_KEYS.SkillsType_1_Group_1_Item_1,
+			TRANSLATION_KEYS.SkillsType_1_Group_1_Item_2,
+			TRANSLATION_KEYS.SkillsType_1_Group_1_Item_3,
 		],
 	},
 	{
-		title: 'State Management',
+		title: TRANSLATION_KEYS.SkillsType_1_GroupTitle_2,
 		items: [
-			'Effector, Effector-React',
-			'Axios, Fetch, XMLHttpRequest, Remote Procedure Call',
-			'React-Redux, Redux-Toolkit, Redux-Saga, Redux-Thunk',
-			'WebSocket, Stomp.js',
-			'Keycloak JS, Keycloak custom theme, client oAuth2 call',
+			TRANSLATION_KEYS.SkillsType_1_Group_2_Item_1,
+			TRANSLATION_KEYS.SkillsType_1_Group_2_Item_2,
+			TRANSLATION_KEYS.SkillsType_1_Group_2_Item_3,
+			TRANSLATION_KEYS.SkillsType_1_Group_2_Item_4,
+			TRANSLATION_KEYS.SkillsType_1_Group_2_Item_5,
 		],
 	},
 	{
-		title: 'Web-API',
+		title: TRANSLATION_KEYS.SkillsType_1_GroupTitle_3,
 		items: [
-			'Online / offline state',
-			'Background Tasks API',
-			'USB Devices API, Bluetooth API, NFC API',
-			'Barcode Detector API',
-			'IndexedDB API',
+			TRANSLATION_KEYS.SkillsType_1_Group_3_Item_1,
+			TRANSLATION_KEYS.SkillsType_1_Group_3_Item_2,
+			TRANSLATION_KEYS.SkillsType_1_Group_3_Item_3,
+			TRANSLATION_KEYS.SkillsType_1_Group_3_Item_4,
+			TRANSLATION_KEYS.SkillsType_1_Group_3_Item_5,
 		],
 	},
 	{
-		title: 'Architectural Knowledge',
-		items: ['Design Patterns', 'Model View Controller Patterns'],
+		title: TRANSLATION_KEYS.SkillsType_1_GroupTitle_4,
+		items: [
+			TRANSLATION_KEYS.SkillsType_1_Group_4_Item_1,
+			TRANSLATION_KEYS.SkillsType_1_Group_4_Item_2,
+		],
 	},
 	{
-		title: 'Miscellaneous',
+		title: TRANSLATION_KEYS.SkillsType_1_GroupTitle_5,
 		items: [
-			'React-XArrows, React-Beautiful-DND, React-Draggable',
-			'Echarts, HighCharts',
-			'Figma, Photoshop',
-			'git, GitLab, GitHub',
-			'Agile, Scrum & Kanban workflows',
+			TRANSLATION_KEYS.SkillsType_1_Group_5_Item_1,
+			TRANSLATION_KEYS.SkillsType_1_Group_5_Item_2,
+			TRANSLATION_KEYS.SkillsType_1_Group_5_Item_3,
+			TRANSLATION_KEYS.SkillsType_1_Group_5_Item_4,
+			TRANSLATION_KEYS.SkillsType_1_Group_5_Item_5,
 		],
 	},
 ];
@@ -48,22 +52,22 @@ export const technicalSkillGroups: SkillGroup[] = [
 export const softSkillsGroups: SkillGroup[] = [
 	{
 		items: [
-			'Desire to learn and grow',
-			'Team work',
-			'Responsibility & Pro-activity',
-			'Time Management',
-			'Critical thinking',
-			'Emotional intelligence',
-			'Adaptability',
+			TRANSLATION_KEYS.SkillsType_2_Item_1,
+			TRANSLATION_KEYS.SkillsType_2_Item_2,
+			TRANSLATION_KEYS.SkillsType_2_Item_3,
+			TRANSLATION_KEYS.SkillsType_2_Item_4,
+			TRANSLATION_KEYS.SkillsType_2_Item_5,
+			TRANSLATION_KEYS.SkillsType_2_Item_6,
+			TRANSLATION_KEYS.SkillsType_2_Item_7,
 		],
 	},
 ];
 export const languageGroups: SkillGroup[] = [
 	{
 		items: [
-			'Russian — native',
-			'English — C1 certified, ~B2 actual',
-			'German  — C1 certified, ~A2-B1 actual',
+			TRANSLATION_KEYS.SkillsType_3_Item_1,
+			TRANSLATION_KEYS.SkillsType_3_Item_2,
+			TRANSLATION_KEYS.SkillsType_3_Item_3,
 		],
 	},
 ];

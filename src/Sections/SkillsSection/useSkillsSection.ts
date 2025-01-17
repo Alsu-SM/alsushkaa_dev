@@ -1,16 +1,35 @@
+import { useUnit } from 'effector-react';
 import {
 	languageGroups,
 	softSkillsGroups,
 	technicalSkillGroups,
 } from './constants';
 import { renderSkillGroup } from './renders';
+import { $settings } from '../../Model/settings/state';
 
 function useSkillsSection() {
-	const technicalSkillGroupRows = technicalSkillGroups.map(renderSkillGroup);
-	const softSkillGroupRows = softSkillsGroups.map(renderSkillGroup);
-	const languageGroupRows = languageGroups.map(renderSkillGroup);
+	const { language } = useUnit($settings);
 
-	return { technicalSkillGroupRows, softSkillGroupRows, languageGroupRows };
+	const technicalSkillGroupRows = technicalSkillGroups.map((group, index) =>
+		renderSkillGroup(group, language, index),
+	);
+
+	const softSkillGroupRows = softSkillsGroups.map((group, index) =>
+		renderSkillGroup(group, language, index + technicalSkillGroups.length),
+	);
+	const languageGroupRows = languageGroups.map((group, index) =>
+		renderSkillGroup(
+			group,
+			language,
+			index + technicalSkillGroups.length + softSkillsGroups.length,
+		),
+	);
+
+	return {
+		technicalSkillGroupRows,
+		softSkillGroupRows,
+		languageGroupRows,
+	};
 }
 
 export default useSkillsSection;
