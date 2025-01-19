@@ -53,6 +53,7 @@ export const PWA_PROJECT: ProjectItem = {
 	result:
 		'The launch of the pilot was successful and it was further developed into  a full-fledged application for tracking the movement of goods from the moment of declaration of need to actual use in production',
 	imageResult: p1_result,
+	isResultMobile: true,
 };
 
 export const PUFF_TRACKER_PROJECT: ProjectItem = {
@@ -106,6 +107,7 @@ export const PUFF_TRACKER_PROJECT: ProjectItem = {
 	result:
 		'I brought the application to a stable state, created a backlog and began using it with great pleasure. At the moment, nicotine consumption has decreased by half and this is just the beginning',
 	imageResult: p2_result,
+	isResultMobile: true,
 };
 export const GRADIENT_PICKER_PROJECT: ProjectItem = {
 	title: 'Gradient picker',
@@ -136,4 +138,5 @@ export const GRADIENT_PICKER_PROJECT: ProjectItem = {
 	result:
 		'The project turned out cute and concise, I regularly use it in the development of pet projects, creating aesthetic gradients',
 	imageResult: p3_result,
+	isResultMobile: false,
 };

@@ -1,5 +1,5 @@
 const SIZE: number = 20;
-const COLORS: string[] = ['#326f95', '#d76d71'];
+const COLORS: string[] = ['#326f95'];
 
 const CHARSET: string[] = [
 	'0',

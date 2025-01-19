@@ -12,6 +12,7 @@ function Project({ item, className, style }: ProjectProps) {
 		technologies,
 		result,
 		imageResult = mockup,
+		isResultMobile,
 	} = item;
 
 	const technologiesRows = technologies.map((technology) => (
@@ -36,9 +37,18 @@ function Project({ item, className, style }: ProjectProps) {
 				<div className={styles.technologies_title}>Used technologies</div>
 				<div className={styles.technologies_list}>{technologiesRows}</div>
 			</div>
-			<div className={styles.result}>
+			<div
+				className={clsx(styles.result, {
+					[styles.result__mobile]: isResultMobile,
+				})}
+			>
 				<div className={styles.result_description}>{result}</div>
-				<img src={imageResult} className={styles.image} />
+				<img
+					src={imageResult}
+					className={clsx(styles.image, {
+						[styles.image__mobile]: isResultMobile,
+					})}
+				/>
 			</div>
 		</div>
 	);

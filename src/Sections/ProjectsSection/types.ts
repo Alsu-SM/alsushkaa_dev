@@ -18,4 +18,5 @@ export type ProjectItem = {
 	link?: string;
 	result: string;
 	imageResult?: string;
+	isResultMobile: boolean;
 };

@@ -11,6 +11,7 @@ import resumeRu from '../../Assets/resumeEn.pdf';
 import Button from '../../Components/Button';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
+import MatrixWall from '../../Components/MatrixWall/MatrixWall';
 
 function ContactSection({ className, style }: ContactSectionProps) {
 	const { language } = useUnit($settings);
@@ -96,7 +97,9 @@ function ContactSection({ className, style }: ContactSectionProps) {
 				<div className={styles.section_title}>
 					{getTranslation(TRANSLATION_KEYS.LinkContacts, language)}
 				</div>
-				<div className={styles.image_wrapper} />
+				<div className={styles.image_wrapper}>
+					<div className={styles.hands} />
+				</div>
 			</div>
 			<HandButton path={Path.Home} className={styles.hand_button} />
 		</div>
