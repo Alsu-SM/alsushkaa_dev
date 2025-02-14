@@ -21,7 +21,7 @@ function App({ className, style }: AppProps) {
 		});
 
 		if (window.scrollY === 0) {
-			navigate(`/`);
+			navigate(`/alsushkaa_dev`);
 		}
 	};
 
