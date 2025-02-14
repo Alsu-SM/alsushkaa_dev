@@ -1,1 +1,0 @@
-export const MOTIVATION_ACCENT_INDEXES = [];
