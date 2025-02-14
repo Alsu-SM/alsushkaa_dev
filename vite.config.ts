@@ -9,7 +9,7 @@ export default defineConfig({
 		https: {},
 	},
 	plugins: [VitePWA(manifest), react(), mcret()],
-	base: '/alsushkaa_dev/',
+	base: 'https://alsu-sm.github.io/alsushkaa_dev/',
 	css: {
 		modules: {
 			generateScopedName: '[folder]_[local]__[hash:base64:5]',
