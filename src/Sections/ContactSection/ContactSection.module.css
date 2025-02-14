@@ -163,6 +163,10 @@
 	animation: var(--float-animation);
 }
 
+.button_content {
+	transition: opacity 1s;
+}
+
 @media (max-width: 1000px) {
 	.title_column {
 		position: absolute;

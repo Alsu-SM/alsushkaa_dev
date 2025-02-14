@@ -10,9 +10,12 @@ import resume from '../../Assets/resume.pdf';
 import Button from '../../Components/Button';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
+import useContact from './useContact';
 
 function ContactSection({ className, style }: ContactSectionProps) {
 	const { language } = useUnit($settings);
+	const { handleCopyPhone, handleCopyEmail, copyEmailRef, copyPhoneRef } =
+		useContact();
 
 	return (
 		<div
@@ -68,11 +71,15 @@ function ContactSection({ className, style }: ContactSectionProps) {
 						</a>
 					</div>
 					<div className={styles.buttons}>
-						<Button className={styles.button_copy}>
-							{getTranslation(TRANSLATION_KEYS.ContactsCopyPhone, language)}
+						<Button className={styles.button_copy} onClick={handleCopyPhone}>
+							<div className={styles.button_content} ref={copyPhoneRef}>
+								{getTranslation(TRANSLATION_KEYS.ContactsCopyPhone, language)}
+							</div>
 						</Button>
-						<Button className={styles.button_copy}>
-							{getTranslation(TRANSLATION_KEYS.ContactsCopyEmail, language)}
+						<Button className={styles.button_copy} onClick={handleCopyEmail}>
+							<div className={styles.button_content} ref={copyEmailRef}>
+								{getTranslation(TRANSLATION_KEYS.ContactsCopyEmail, language)}
+							</div>
 						</Button>
 						<Button className={styles.button_download}>
 							<a
