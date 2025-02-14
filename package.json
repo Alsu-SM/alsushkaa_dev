@@ -1,14 +1,17 @@
 {
-	"name": "react_vite_boilerplate",
+	"name": "alsushkaa_dev",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
+	"homepage": "https://alsu-sm.github.io/alsushkaa_dev",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint:fix": "eslint --report-unused-disable-directives --max-warnings 0 --fix .",
 		"lint:format": "prettier --log-level warn --write \"./**/*.{ts,tsx,css,md,json}\"",
-		"lint": "yarn lint:format && yarn lint:fix"
+		"lint": "yarn lint:format && yarn lint:fix",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"packageManager": "yarn@4.0.2",
 	"dependencies": {
@@ -36,6 +39,7 @@
 		"eslint-plugin-react-hooks": "4.6.0",
 		"eslint-plugin-react-refresh": "0.4.5",
 		"eslint-plugin-simple-import-sort": "10.0.0",
+		"gh-pages": "^5.0.0",
 		"prettier": "3.1.1",
 		"typescript": "5.3.3",
 		"vite": "5.0.10",
