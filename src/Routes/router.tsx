@@ -6,7 +6,7 @@ import PageError from '../Pages/PageError';
 
 const router = createRouter([
 	{
-		path: '/',
+		path: '/alsushkaa_dev',
 		element: <App />,
 		loader: appLoader,
 		errorElement: <PageError />,
