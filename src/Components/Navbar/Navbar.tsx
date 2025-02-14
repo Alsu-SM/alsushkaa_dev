@@ -9,7 +9,6 @@ import ContactButton from '../ContactButton';
 import Button from '../Button';
 import { Cross, Menu } from '../Icons';
 import Sheet from '../Sheet';
-import exportTranslations from '../../Shared/exportTranslations';
 
 function Navbar({ className, style }: NavbarProps) {
 	const { navLinks, isNavModalShown, handleOpen, handleClose } = useNavbar();
@@ -36,7 +35,6 @@ function Navbar({ className, style }: NavbarProps) {
 								</Button>
 							</div>
 							<div className={styles.modal_links}>{navLinks}</div>
-							<button onClick={exportTranslations}>export</button>
 						</div>
 					</Sheet>
 				</div>

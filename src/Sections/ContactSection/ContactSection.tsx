@@ -6,7 +6,7 @@ import { useUnit } from 'effector-react';
 import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
-import resumeRu from '../../Assets/resumeEn.pdf';
+import resume from '../../Assets/resume.pdf';
 import Button from '../../Components/Button';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
@@ -78,7 +78,7 @@ function ContactSection({ className, style }: ContactSectionProps) {
 							<a
 								className={styles.link_download}
 								download="shareeva_am_resume_ru.pdf"
-								href={resumeRu}
+								href={resume}
 							>
 								{`${getTranslation(
 									TRANSLATION_KEYS.ContactsDownloadResume,
