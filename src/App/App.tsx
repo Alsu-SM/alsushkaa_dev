@@ -19,10 +19,6 @@ function App({ className, style }: AppProps) {
 				navigate(`#${menuItem}`);
 			}
 		});
-
-		if (window.scrollY === 0) {
-			navigate(`/alsushkaa_dev`);
-		}
 	};
 
 	useEffect(() => {
