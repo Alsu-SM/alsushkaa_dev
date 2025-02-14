@@ -6,12 +6,10 @@ import { useUnit } from 'effector-react';
 import { $settings } from '../../Model/settings/state';
 import { ELEMENT_IDS, TRANSLATION_KEYS } from '../../Shared/constants';
 import getTranslation from '../../Shared/getTranslation';
-import resumeEn from '../../Assets/resumeEn.pdf';
 import resumeRu from '../../Assets/resumeEn.pdf';
 import Button from '../../Components/Button';
 import HandButton from '../../Components/HandButton';
 import { Path } from '../../Components/Navbar/types';
-import MatrixWall from '../../Components/MatrixWall/MatrixWall';
 
 function ContactSection({ className, style }: ContactSectionProps) {
 	const { language } = useUnit($settings);
@@ -25,15 +23,16 @@ function ContactSection({ className, style }: ContactSectionProps) {
 			<div className={styles.content}>
 				<div className={styles.messages}>
 					<div className={clsx(styles.message, styles.message_accent)}>
-						Contact me if you’d like to work together {'<3'}
+						{getTranslation(TRANSLATION_KEYS.ContactsTitle, language)}
 					</div>
 					<div className={styles.message}>
-						I am located in Nizhny Novgorod, Russia and am currently open to
-						~preferably remote~ full-time offers
+						{getTranslation(TRANSLATION_KEYS.ContactsDescription, language)}
 					</div>
 				</div>
 				<div className={styles.contacts}>
-					<div className={styles.contacts_title}>You can find me on:</div>
+					<div className={styles.contacts_title}>
+						{getTranslation(TRANSLATION_KEYS.ContactsFindMeOn, language)}
+					</div>
 					<div className={styles.contacts_group}>
 						<a
 							href="https://t.me/alsushkaa14"
@@ -65,29 +64,26 @@ function ContactSection({ className, style }: ContactSectionProps) {
 							rel="noreferrer"
 							className={styles.contacts_item}
 						>
-							Or just call me
+							{getTranslation(TRANSLATION_KEYS.ContactsCallMe, language)}
 						</a>
 					</div>
 					<div className={styles.buttons}>
-						<Button className={styles.button_copy}>Copy phone</Button>
-						<Button className={styles.button_copy}>Copy email</Button>
+						<Button className={styles.button_copy}>
+							{getTranslation(TRANSLATION_KEYS.ContactsCopyPhone, language)}
+						</Button>
+						<Button className={styles.button_copy}>
+							{getTranslation(TRANSLATION_KEYS.ContactsCopyEmail, language)}
+						</Button>
 						<Button className={styles.button_download}>
 							<a
 								className={styles.link_download}
 								download="shareeva_am_resume_ru.pdf"
 								href={resumeRu}
 							>
-								Download resume (RU)
-							</a>
-						</Button>
-
-						<Button className={styles.button_download}>
-							<a
-								className={styles.link_download}
-								download="shareeva_am_resume_en.pdf"
-								href={resumeEn}
-							>
-								Download resume (EN)
+								{`${getTranslation(
+									TRANSLATION_KEYS.ContactsDownloadResume,
+									language,
+								)}`}
 							</a>
 						</Button>
 					</div>

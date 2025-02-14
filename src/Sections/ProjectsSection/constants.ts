@@ -2,141 +2,210 @@ import { ProjectItem } from './types';
 import p1_result from '../../Assets/p1_result.png';
 import p2_result from '../../Assets/p2_result.gif';
 import p3_result from '../../Assets/p3_result.gif';
+import p4_result from '../../Assets/p4_result.gif';
+import p5_result from '../../Assets/p5_result.gif';
+import p6_result from '../../Assets/p6_result.png';
+import { TRANSLATION_KEYS } from '../../Shared/constants';
 
 export const PWA_PROJECT: ProjectItem = {
-	title: 'PWA Pilot',
-	description:
-		'The goal was to reveal the main capabilities of Powerful Web Applications in one project',
-	subDescription: 'Simple Mobile-First design, powerful functionality',
+	title: TRANSLATION_KEYS.ProjectsPWAPilotTitle,
+	description: TRANSLATION_KEYS.ProjectsPWAPilotDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsPWAPilotSubDescription,
 	technologies: [
 		{
-			title: 'Barcode Web API',
-			description:
-				'This module included access to the camera, use of a flashlight for easier scanning, display of the current video stream, and, finally, barcode scanning and decoding',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_1_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_1_Description,
 		},
 		{
-			title: 'Online/Offline control',
-			description: 'Monitoring network connection status',
-		},
-
-		{
-			title: 'Background Tasks Web API',
-			description:
-				'The API was used to add a random row entry to indexedDB every 5 seconds in the background. We have provided the ability to pause and resume background work, and also added a database clearing function',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_2_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_2_Description,
 		},
 		{
-			title: 'NFC Web API',
-			description:
-				'This module provided the ability to scan and rewrite data of special NFC tags',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_3_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_3_Description,
 		},
 		{
-			title: 'Bluetooth Web API',
-			description:
-				'Displayed a list of Bluetooth devices connected to the web page and prompted users to connect/disconnect the device they needed.',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_4_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_4_Description,
 		},
 		{
-			title: 'USB web API',
-			description:
-				'This module had similar functionality and worked with all devices connected to the page via USB, including a microphone, camera, keyboard, etc.',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_5_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_5_Description,
 		},
 		{
-			title: 'Push notifications',
-			description:
-				'We configured a server for push notifications and connected a service-worker that manages subscriptions to notifications stream',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_6_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_6_Description,
 		},
 		{
-			title: 'IndexedDB API',
-			description:
-				'The application stored half a million records in indexedDB to demonstrate the speed of searching by key and by value across a large amount of data.',
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_7_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_7_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_8_Title,
+			description: TRANSLATION_KEYS.ProjectsPWAPilotTechnology_8_Description,
 		},
 	],
-	result:
-		'The launch of the pilot was successful and it was further developed into  a full-fledged application for tracking the movement of goods from the moment of declaration of need to actual use in production',
+	result: TRANSLATION_KEYS.ProjectsPWAPilotResult,
 	imageResult: p1_result,
 	isResultMobile: true,
 };
-
-export const PUFF_TRACKER_PROJECT: ProjectItem = {
-	title: 'Puff tracker',
-	description:
-		'An application that would allow user to monitor the dynamics of nicotine consumption and include a program for slowly quitting',
-	subDescription:
-		'Track only mode or increase intervals between smoke breaks mode with flexible settings and a pleasant interface',
+export const TMC_PROJECT: ProjectItem = {
+	title: TRANSLATION_KEYS.ProjectsTMCTitle,
+	description: TRANSLATION_KEYS.ProjectsTMCDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsTMCSubDescription,
 	technologies: [
 		{
-			title: 'Powerful Web Application',
-			description:
-				'Correct configuration of the manifest allowed us to install the web page as an application, cache the necessary data and use puff tracker without the Internet',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_1_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_1_Description,
 		},
 		{
-			title: 'Echarts',
-			description:
-				'Aesthetic graphs showing the dynamics of nicotine consumption and changes in the frequency of smoking breaks',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_2_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_2_Description,
 		},
 		{
-			title: 'Effector',
-			description:
-				'State management divided into a user interface model and a smoking statistics data model',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_3_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_3_Description,
 		},
 		{
-			title: 'LocalStorage',
-			description:
-				'A simple but effective tool for discreetly saving and restoring user data within one device',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_4_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_4_Description,
 		},
 		{
-			title: 'Backup System',
-			description:
-				'Saving all necessary data on the user’s device in a text file has opened up the opportunity to recover deleted data or transfer it to another device.\nValidation during parsing made it possible to secure the data recovery process',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_5_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_5_Description,
 		},
 		{
-			title: 'Bug report via email.js',
-			description:
-				'If problems arise, the user has the opportunity to call the Bug report modal window, describe the issue and email it to the developer',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_6_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_6_Description,
 		},
 		{
-			title: 'Screenshots for bug report via html-to-image',
-			description:
-				'When opening a Bug report modal, the application takes a snapshot of the active page, compresses it and sends it along with the entered data by email to the developer',
-		},
-		{
-			title: 'Mobile Datepicker',
-			description:
-				'Aesthetic styling of the mobile datepicker component made it possible to obtain consistent functionality of a native component with beautiful styles',
+			title: TRANSLATION_KEYS.ProjectsTMCTechnology_7_Title,
+			description: TRANSLATION_KEYS.ProjectsTMCTechnology_7_Description,
 		},
 	],
-	result:
-		'I brought the application to a stable state, created a backlog and began using it with great pleasure. At the moment, nicotine consumption has decreased by half and this is just the beginning',
+	result: TRANSLATION_KEYS.ProjectsTMCResult,
+	imageResult: p6_result,
+	isResultMobile: false,
+};
+
+export const PUFF_TRACKER_PROJECT: ProjectItem = {
+	title: TRANSLATION_KEYS.ProjectsPuffTrackerTitle,
+	description: TRANSLATION_KEYS.ProjectsPuffTrackerDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsPuffTrackerSubDescription,
+	technologies: [
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_1_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_1_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_2_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_2_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_3_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_3_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_4_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_4_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_5_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_5_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_6_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_6_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_7_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_7_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_8_Title,
+			description: TRANSLATION_KEYS.ProjectsPuffTrackerTechnology_8_Description,
+		},
+	],
+	result: TRANSLATION_KEYS.ProjectsPuffTrackerResult,
 	imageResult: p2_result,
 	isResultMobile: true,
 };
+
 export const GRADIENT_PICKER_PROJECT: ProjectItem = {
-	title: 'Gradient picker',
-	description: 'Gradient generator with fine-tuning colors and positions. ',
-	subDescription:
-		'Ability to add gradients to favorites, copy CSS code and download the generated image',
+	title: TRANSLATION_KEYS.ProjectsGradientPickerTitle,
+	description: TRANSLATION_KEYS.ProjectsGradientPickerDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsGradientPickerSubDescription,
 	technologies: [
 		{
-			title: 'Effector',
+			title: TRANSLATION_KEYS.ProjectsGradientPickerTechnology_1_Title,
 			description:
-				'State management divided into a current settings model and a data model for gradients',
+				TRANSLATION_KEYS.ProjectsGradientPickerTechnology_1_Description,
 		},
 		{
-			title: '@uiw/react-color',
-			description: 'Color wheel and color presets for easy gradient adjustment',
+			title: TRANSLATION_KEYS.ProjectsGradientPickerTechnology_2_Title,
+			description:
+				TRANSLATION_KEYS.ProjectsGradientPickerTechnology_2_Description,
 		},
 		{
-			title: 'Screenshots via html-to-image',
+			title: TRANSLATION_KEYS.ProjectsGradientPickerTechnology_3_Title,
 			description:
-				'Ability to save the generated gradient in png format with css code at the bottom of the image',
+				TRANSLATION_KEYS.ProjectsGradientPickerTechnology_3_Description,
 		},
 		{
-			title: 'Clipboard api',
+			title: TRANSLATION_KEYS.ProjectsGradientPickerTechnology_4_Title,
 			description:
-				'Copying the css code for the generated gradient to the clipboard by clicking on the button',
+				TRANSLATION_KEYS.ProjectsGradientPickerTechnology_4_Description,
 		},
 	],
-	result:
-		'The project turned out cute and concise, I regularly use it in the development of pet projects, creating aesthetic gradients',
+	result: TRANSLATION_KEYS.ProjectsGradientPickerResult,
 	imageResult: p3_result,
 	isResultMobile: false,
+};
+
+export const DATA_VISUALIZATION_PROJECT: ProjectItem = {
+	title: TRANSLATION_KEYS.ProjectsDataVisualizationTitle,
+	description: TRANSLATION_KEYS.ProjectsDataVisualizationDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsDataVisualizationSubDescription,
+	technologies: [
+		{
+			title: TRANSLATION_KEYS.ProjectsDataVisualizationTechnology_1_Title,
+			description:
+				TRANSLATION_KEYS.ProjectsDataVisualizationTechnology_1_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsDataVisualizationTechnology_2_Title,
+			description:
+				TRANSLATION_KEYS.ProjectsDataVisualizationTechnology_2_Description,
+		},
+	],
+	result: TRANSLATION_KEYS.ProjectsDataVisualizationResult,
+	imageResult: p4_result,
+	isResultMobile: true,
+};
+
+export const UN_PUZZLE_PROJECT: ProjectItem = {
+	title: TRANSLATION_KEYS.ProjectsUnPuzzleTitle,
+	description: TRANSLATION_KEYS.ProjectsUnPuzzleDescription,
+	subDescription: TRANSLATION_KEYS.ProjectsUnPuzzleSubDescription,
+	technologies: [
+		{
+			title: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_1_Title,
+			description: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_1_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_2_Title,
+			description: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_2_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_3_Title,
+			description: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_3_Description,
+		},
+		{
+			title: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_4_Title,
+			description: TRANSLATION_KEYS.ProjectsUnPuzzleTechnology_4_Description,
+		},
+	],
+	result: TRANSLATION_KEYS.ProjectsUnPuzzleResult,
+	imageResult: p5_result,
+	isResultMobile: true,
 };

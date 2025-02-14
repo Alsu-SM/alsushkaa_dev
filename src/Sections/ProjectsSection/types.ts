@@ -1,4 +1,5 @@
 import React from 'react';
+import { TRANSLATION_KEYS } from '../../Shared/constants';
 
 export interface ProjectsSectionProps {
 	className?: string;
@@ -6,17 +7,17 @@ export interface ProjectsSectionProps {
 }
 
 export type ProjectTechnology = {
-	title: string;
-	description: string;
+	title: TRANSLATION_KEYS;
+	description: TRANSLATION_KEYS;
 };
 
 export type ProjectItem = {
-	title: string;
-	description: string;
-	subDescription: string;
+	title: TRANSLATION_KEYS;
+	description: TRANSLATION_KEYS;
+	subDescription: TRANSLATION_KEYS;
 	technologies: ProjectTechnology[];
 	link?: string;
-	result: string;
+	result: TRANSLATION_KEYS;
 	imageResult?: string;
 	isResultMobile: boolean;
 };

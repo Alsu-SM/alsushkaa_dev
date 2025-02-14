@@ -3,6 +3,10 @@ import { ProjectProps } from './types';
 
 import styles from './Project.module.css';
 import mockup from '../../../Assets/mockup.png';
+import { useUnit } from 'effector-react';
+import { $settings } from '../../../Model/settings/state';
+import getTranslation from '../../../Shared/getTranslation';
+import { TRANSLATION_KEYS } from '../../../Shared/constants';
 
 function Project({ item, className, style }: ProjectProps) {
 	const {
@@ -14,12 +18,15 @@ function Project({ item, className, style }: ProjectProps) {
 		imageResult = mockup,
 		isResultMobile,
 	} = item;
+	const { language } = useUnit($settings);
 
 	const technologiesRows = technologies.map((technology) => (
 		<div key={technology.title} className={styles.technology_item}>
-			<div className={styles.technology_item_title}>{technology.title}</div>
+			<div className={styles.technology_item_title}>
+				{getTranslation(technology.title, language)}
+			</div>
 			<div className={styles.technology_item_description}>
-				{technology.description}
+				{getTranslation(technology.description, language)}
 			</div>
 		</div>
 	));
@@ -27,14 +34,20 @@ function Project({ item, className, style }: ProjectProps) {
 	return (
 		<div className={clsx(styles.root, className)} style={style}>
 			<div className={styles.header}>
-				<div className={styles.title}>{title}</div>
+				<div className={styles.title}>{getTranslation(title, language)}</div>
 				<div className={styles.description_column}>
-					<div className={styles.description}>{description}</div>
-					<div className={styles.sub_description}>{subDescription}</div>
+					<div className={styles.description}>
+						{getTranslation(description, language)}
+					</div>
+					<div className={styles.sub_description}>
+						{getTranslation(subDescription, language)}
+					</div>
 				</div>
 			</div>
 			<div className={styles.technologies}>
-				<div className={styles.technologies_title}>Used technologies</div>
+				<div className={styles.technologies_title}>
+					{getTranslation(TRANSLATION_KEYS.ProjectsUsedTechnologies, language)}
+				</div>
 				<div className={styles.technologies_list}>{technologiesRows}</div>
 			</div>
 			<div
@@ -42,7 +55,9 @@ function Project({ item, className, style }: ProjectProps) {
 					[styles.result__mobile]: isResultMobile,
 				})}
 			>
-				<div className={styles.result_description}>{result}</div>
+				<div className={styles.result_description}>
+					{getTranslation(result, language)}
+				</div>
 				<img
 					src={imageResult}
 					className={clsx(styles.image, {

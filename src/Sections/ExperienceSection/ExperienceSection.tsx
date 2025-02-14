@@ -20,21 +20,25 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 			<div className={styles.content}>
 				<div className={styles.experience_column}>
 					<div className={styles.item}>
-						<div className={styles.item_date}>summer 2023 — current time</div>
+						<div className={styles.item_date}>
+							{getTranslation(TRANSLATION_KEYS.ExperienceYears_1, language)}
+						</div>
 						<div className={styles.item_title}>
 							Junior+ — Middle+ Frontend Developer
 						</div>
 						<div className={styles.item_location}>@EvrazIT</div>
 						<div className={styles.item_description}>
-							{' '}
-							A place where I felt I was valued and given the opportunity to
-							develop freely. Many different projects in the fields of mining,
-							metallurgy and management helped me move forward. The skill matrix
-							added more fun and motivation into this process.
+							{getTranslation(
+								TRANSLATION_KEYS.ExperienceDescription_1,
+								language,
+							)}
 						</div>
 						<div className={styles.responsibility}>
 							<div className={styles.responsibility_title}>
-								My responsibilities included:
+								{getTranslation(
+									TRANSLATION_KEYS.ExperienceResponsibility,
+									language,
+								)}
 							</div>
 							<div className={styles.responsibility_description}>
 								<div className={styles.responsibility_description_item}>
@@ -43,7 +47,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Developing according to internal standards.
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_1,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -51,8 +58,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Minimal use of external libraries: in-house implementation is
-									preferable
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_2,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -60,7 +69,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Developing of the company's UI kit
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_3,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -68,8 +80,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Leading role in a large number of projects, including projects
-									of the highest priority
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_4,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -77,7 +91,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Cross-review and code review. Refactoring.
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_5,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -85,8 +102,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Acceptance of layouts, working out questions with project
-									analytics, maintaining documentation
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_6,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -94,8 +113,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Learning new technologies and working with PWA, web-sockets
-									and Web APIs
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_7,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description_item}>
 									<img
@@ -103,8 +124,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 										className={styles.icon}
 										alt="gummy bears"
 									/>
-									Solving new architectural problems and optimizing systems that
-									work with large amounts of data
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility_1_8,
+										language,
+									)}
 								</div>
 							</div>
 						</div>
@@ -112,24 +135,29 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 				</div>
 				<div className={styles.experience_message_column}>
 					<div className={styles.message}>
-						I am thankful for this experience and for everything I have learned
-						in these years
+						{getTranslation(TRANSLATION_KEYS.ExperienceGratitude, language)}
 					</div>
 					<div className={styles.experience}>
 						<div className={styles.item}>
-							<div className={styles.item_date}>winter 2021 — summer 2023</div>
+							<div className={styles.item_date}>
+								{getTranslation(TRANSLATION_KEYS.ExperienceYears_2, language)}
+							</div>
 							<div className={styles.item_title}>
 								Trainee — Junior+ Frontend Developer
 							</div>
 							<div className={styles.item_location}>@AutomateBusiness</div>
 							<div className={styles.item_description}>
-								First steps into the world of professional development and rapid
-								growth due to a huge amount of practice on projects in the field
-								of finance, water supply and metallurgy
+								{getTranslation(
+									TRANSLATION_KEYS.ExperienceDescription_2,
+									language,
+								)}
 							</div>
 							<div className={styles.responsibility}>
 								<div className={styles.responsibility_title}>
-									My responsibilities included:
+									{getTranslation(
+										TRANSLATION_KEYS.ExperienceResponsibility,
+										language,
+									)}
 								</div>
 								<div className={styles.responsibility_description}>
 									<div className={styles.responsibility_description_item}>
@@ -138,7 +166,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 											className={styles.icon}
 											alt="gummy bears"
 										/>
-										Creating new projects from scratch and supporting old ones
+										{getTranslation(
+											TRANSLATION_KEYS.ExperienceResponsibility_2_1,
+											language,
+										)}
 									</div>
 									<div className={styles.responsibility_description_item}>
 										<img
@@ -146,8 +177,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 											className={styles.icon}
 											alt="gummy bears"
 										/>
-										Thinking through complex logic and making layout of
-										beautiful landing pages
+										{getTranslation(
+											TRANSLATION_KEYS.ExperienceResponsibility_2_2,
+											language,
+										)}
 									</div>
 									<div className={styles.responsibility_description_item}>
 										<img
@@ -155,8 +188,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 											className={styles.icon}
 											alt="gummy bears"
 										/>
-										Mastering new libraries and developing auxiliary custom
-										hooks, utilities, packages and components
+										{getTranslation(
+											TRANSLATION_KEYS.ExperienceResponsibility_2_3,
+											language,
+										)}
 									</div>
 									<div className={styles.responsibility_description_item}>
 										<img
@@ -164,7 +199,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 											className={styles.icon}
 											alt="gummy bears"
 										/>
-										Participating in cross-reviews and conducting code reviews
+										{getTranslation(
+											TRANSLATION_KEYS.ExperienceResponsibility_2_4,
+											language,
+										)}
 									</div>
 									<div className={styles.responsibility_description_item}>
 										<img
@@ -172,8 +210,10 @@ function ExperienceSection({ className, style }: ExperienceSectionProps) {
 											className={styles.icon}
 											alt="gummy bears"
 										/>
-										Having leading role in creating a product in the water
-										supply sector, included in the register of Russian software
+										{getTranslation(
+											TRANSLATION_KEYS.ExperienceResponsibility_2_5,
+											language,
+										)}
 									</div>
 								</div>
 							</div>
