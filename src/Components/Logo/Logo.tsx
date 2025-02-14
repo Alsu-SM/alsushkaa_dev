@@ -14,7 +14,7 @@ function Logo({ className, style }: LogoProps) {
 		<NavLink
 			className={clsx(styles.logo, className)}
 			id={ELEMENT_IDS.Logo}
-			to="/"
+			to="#intro"
 			key="home"
 			style={style}
 			onClick={handleClick}

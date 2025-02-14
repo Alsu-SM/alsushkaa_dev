@@ -6,10 +6,9 @@ import styles from './HandButton.module.css';
 import { ELEMENT_IDS } from '../../Shared/constants';
 import { NavLink } from 'react-router-dom';
 import { scrollIntoView } from '../../Utils/scrollIntoView';
-import { Path } from '../Navbar/types';
 
 function HandButton({ path, className, style }: HandButtonProps) {
-	const formattedPath = path === Path.Home ? '/' : `#${path}`;
+	const formattedPath = `#${path}`;
 
 	const handleClick = () => {
 		scrollIntoView(path);
