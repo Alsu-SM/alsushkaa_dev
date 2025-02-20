@@ -1,5 +1,9 @@
 .hand {
 	z-index: 10;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .hand_icon {
